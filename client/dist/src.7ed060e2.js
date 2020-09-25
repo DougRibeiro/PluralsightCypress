@@ -37317,13 +37317,13 @@ request.put = function (url, data, fn) {
 var global = arguments[3];
 "use strict";
 
-var cov_sr0vk1pn9 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/agent.js";
-  var hash = "3d213b860a00b64c0bad8b617f592ff7b37b4ea2";
+var cov_2h2wpqabwk = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/agent.js";
+  var hash = "2e017c87cca6fb48f7b99b7b9a119bd9e32600fd";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/agent.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/agent.js",
     statementMap: {
       "0": {
         start: {
@@ -38686,7 +38686,7 @@ var cov_sr0vk1pn9 = function () {
       "1": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "3d213b860a00b64c0bad8b617f592ff7b37b4ea2"
+    hash: "2e017c87cca6fb48f7b99b7b9a119bd9e32600fd"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -38708,64 +38708,64 @@ var _superagent2 = _interopRequireDefault(require("superagent"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const superagent = (cov_sr0vk1pn9.s[0]++, (0, _superagentPromise.default)(_superagent2.default, global.Promise));
-const API_ROOT = (cov_sr0vk1pn9.s[1]++, 'http://localhost:3000/api');
-const encode = (cov_sr0vk1pn9.s[2]++, encodeURIComponent);
-cov_sr0vk1pn9.s[3]++;
+const superagent = (cov_2h2wpqabwk.s[0]++, (0, _superagentPromise.default)(_superagent2.default, global.Promise));
+const API_ROOT = (cov_2h2wpqabwk.s[1]++, 'http://localhost:3000/api');
+const encode = (cov_2h2wpqabwk.s[2]++, encodeURIComponent);
+cov_2h2wpqabwk.s[3]++;
 
 const responseBody = res => {
-  cov_sr0vk1pn9.f[0]++;
-  cov_sr0vk1pn9.s[4]++;
+  cov_2h2wpqabwk.f[0]++;
+  cov_2h2wpqabwk.s[4]++;
   return res.body;
 };
 
-let token = (cov_sr0vk1pn9.s[5]++, null);
-cov_sr0vk1pn9.s[6]++;
+let token = (cov_2h2wpqabwk.s[5]++, null);
+cov_2h2wpqabwk.s[6]++;
 
 const tokenPlugin = req => {
-  cov_sr0vk1pn9.f[1]++;
-  cov_sr0vk1pn9.s[7]++;
+  cov_2h2wpqabwk.f[1]++;
+  cov_2h2wpqabwk.s[7]++;
 
   if (token) {
-    cov_sr0vk1pn9.b[0][0]++;
-    cov_sr0vk1pn9.s[8]++;
+    cov_2h2wpqabwk.b[0][0]++;
+    cov_2h2wpqabwk.s[8]++;
     req.set('authorization', "Token ".concat(token));
   } else {
-    cov_sr0vk1pn9.b[0][1]++;
+    cov_2h2wpqabwk.b[0][1]++;
   }
 };
 
-const requests = (cov_sr0vk1pn9.s[9]++, {
+const requests = (cov_2h2wpqabwk.s[9]++, {
   del: url => {
-    cov_sr0vk1pn9.f[2]++;
-    cov_sr0vk1pn9.s[10]++;
+    cov_2h2wpqabwk.f[2]++;
+    cov_2h2wpqabwk.s[10]++;
     return superagent.del("".concat(API_ROOT).concat(url)).use(tokenPlugin).then(responseBody);
   },
   get: url => {
-    cov_sr0vk1pn9.f[3]++;
-    cov_sr0vk1pn9.s[11]++;
+    cov_2h2wpqabwk.f[3]++;
+    cov_2h2wpqabwk.s[11]++;
     return superagent.get("".concat(API_ROOT).concat(url)).use(tokenPlugin).then(responseBody);
   },
   put: (url, body) => {
-    cov_sr0vk1pn9.f[4]++;
-    cov_sr0vk1pn9.s[12]++;
+    cov_2h2wpqabwk.f[4]++;
+    cov_2h2wpqabwk.s[12]++;
     return superagent.put("".concat(API_ROOT).concat(url), body).use(tokenPlugin).then(responseBody);
   },
   post: (url, body) => {
-    cov_sr0vk1pn9.f[5]++;
-    cov_sr0vk1pn9.s[13]++;
+    cov_2h2wpqabwk.f[5]++;
+    cov_2h2wpqabwk.s[13]++;
     return superagent.post("".concat(API_ROOT).concat(url), body).use(tokenPlugin).then(responseBody);
   }
 });
-const Auth = (cov_sr0vk1pn9.s[14]++, {
+const Auth = (cov_2h2wpqabwk.s[14]++, {
   current: () => {
-    cov_sr0vk1pn9.f[6]++;
-    cov_sr0vk1pn9.s[15]++;
+    cov_2h2wpqabwk.f[6]++;
+    cov_2h2wpqabwk.s[15]++;
     return requests.get('/user');
   },
   login: (email, password) => {
-    cov_sr0vk1pn9.f[7]++;
-    cov_sr0vk1pn9.s[16]++;
+    cov_2h2wpqabwk.f[7]++;
+    cov_2h2wpqabwk.s[16]++;
     return requests.post('/users/login', {
       user: {
         email,
@@ -38774,8 +38774,8 @@ const Auth = (cov_sr0vk1pn9.s[14]++, {
     });
   },
   register: (username, email, password) => {
-    cov_sr0vk1pn9.f[8]++;
-    cov_sr0vk1pn9.s[17]++;
+    cov_2h2wpqabwk.f[8]++;
+    cov_2h2wpqabwk.s[17]++;
     return requests.post('/users', {
       user: {
         username,
@@ -38785,132 +38785,132 @@ const Auth = (cov_sr0vk1pn9.s[14]++, {
     });
   },
   save: user => {
-    cov_sr0vk1pn9.f[9]++;
-    cov_sr0vk1pn9.s[18]++;
+    cov_2h2wpqabwk.f[9]++;
+    cov_2h2wpqabwk.s[18]++;
     return requests.put('/user', {
       user
     });
   }
 });
-const Tags = (cov_sr0vk1pn9.s[19]++, {
+const Tags = (cov_2h2wpqabwk.s[19]++, {
   getAll: () => {
-    cov_sr0vk1pn9.f[10]++;
-    cov_sr0vk1pn9.s[20]++;
+    cov_2h2wpqabwk.f[10]++;
+    cov_2h2wpqabwk.s[20]++;
     return requests.get('/tags');
   }
 });
-cov_sr0vk1pn9.s[21]++;
+cov_2h2wpqabwk.s[21]++;
 
 const limit = (count, p) => {
-  cov_sr0vk1pn9.f[11]++;
-  cov_sr0vk1pn9.s[22]++;
-  return "limit=".concat(count, "&offset=").concat(p ? (cov_sr0vk1pn9.b[1][0]++, p * count) : (cov_sr0vk1pn9.b[1][1]++, 0));
+  cov_2h2wpqabwk.f[11]++;
+  cov_2h2wpqabwk.s[22]++;
+  return "limit=".concat(count, "&offset=").concat(p ? (cov_2h2wpqabwk.b[1][0]++, p * count) : (cov_2h2wpqabwk.b[1][1]++, 0));
 };
 
-cov_sr0vk1pn9.s[23]++;
+cov_2h2wpqabwk.s[23]++;
 
 const omitSlug = article => {
-  cov_sr0vk1pn9.f[12]++;
-  cov_sr0vk1pn9.s[24]++;
+  cov_2h2wpqabwk.f[12]++;
+  cov_2h2wpqabwk.s[24]++;
   return Object.assign({}, article, {
     slug: undefined
   });
 };
 
-const Articles = (cov_sr0vk1pn9.s[25]++, {
+const Articles = (cov_2h2wpqabwk.s[25]++, {
   all: page => {
-    cov_sr0vk1pn9.f[13]++;
-    cov_sr0vk1pn9.s[26]++;
+    cov_2h2wpqabwk.f[13]++;
+    cov_2h2wpqabwk.s[26]++;
     return requests.get("/articles?".concat(limit(10, page)));
   },
   byAuthor: (author, page) => {
-    cov_sr0vk1pn9.f[14]++;
-    cov_sr0vk1pn9.s[27]++;
+    cov_2h2wpqabwk.f[14]++;
+    cov_2h2wpqabwk.s[27]++;
     return requests.get("/articles?author=".concat(encode(author), "&").concat(limit(5, page)));
   },
   byTag: (tag, page) => {
-    cov_sr0vk1pn9.f[15]++;
-    cov_sr0vk1pn9.s[28]++;
+    cov_2h2wpqabwk.f[15]++;
+    cov_2h2wpqabwk.s[28]++;
     return requests.get("/articles?tag=".concat(encode(tag), "&").concat(limit(10, page)));
   },
   del: slug => {
-    cov_sr0vk1pn9.f[16]++;
-    cov_sr0vk1pn9.s[29]++;
+    cov_2h2wpqabwk.f[16]++;
+    cov_2h2wpqabwk.s[29]++;
     return requests.del("/articles/".concat(slug));
   },
   favorite: slug => {
-    cov_sr0vk1pn9.f[17]++;
-    cov_sr0vk1pn9.s[30]++;
+    cov_2h2wpqabwk.f[17]++;
+    cov_2h2wpqabwk.s[30]++;
     return requests.post("/articles/".concat(slug, "/favorite"));
   },
   favoritedBy: (author, page) => {
-    cov_sr0vk1pn9.f[18]++;
-    cov_sr0vk1pn9.s[31]++;
+    cov_2h2wpqabwk.f[18]++;
+    cov_2h2wpqabwk.s[31]++;
     return requests.get("/articles?favorited=".concat(encode(author), "&").concat(limit(5, page)));
   },
   feed: () => {
-    cov_sr0vk1pn9.f[19]++;
-    cov_sr0vk1pn9.s[32]++;
+    cov_2h2wpqabwk.f[19]++;
+    cov_2h2wpqabwk.s[32]++;
     return requests.get('/articles/feed?limit=10&offset=0');
   },
   get: slug => {
-    cov_sr0vk1pn9.f[20]++;
-    cov_sr0vk1pn9.s[33]++;
+    cov_2h2wpqabwk.f[20]++;
+    cov_2h2wpqabwk.s[33]++;
     return requests.get("/articles/".concat(slug));
   },
   unfavorite: slug => {
-    cov_sr0vk1pn9.f[21]++;
-    cov_sr0vk1pn9.s[34]++;
+    cov_2h2wpqabwk.f[21]++;
+    cov_2h2wpqabwk.s[34]++;
     return requests.del("/articles/".concat(slug, "/favorite"));
   },
   update: article => {
-    cov_sr0vk1pn9.f[22]++;
-    cov_sr0vk1pn9.s[35]++;
+    cov_2h2wpqabwk.f[22]++;
+    cov_2h2wpqabwk.s[35]++;
     return requests.put("/articles/".concat(article.slug), {
       article: omitSlug(article)
     });
   },
   create: article => {
-    cov_sr0vk1pn9.f[23]++;
-    cov_sr0vk1pn9.s[36]++;
+    cov_2h2wpqabwk.f[23]++;
+    cov_2h2wpqabwk.s[36]++;
     return requests.post('/articles', {
       article
     });
   }
 });
-const Comments = (cov_sr0vk1pn9.s[37]++, {
+const Comments = (cov_2h2wpqabwk.s[37]++, {
   create: (slug, comment) => {
-    cov_sr0vk1pn9.f[24]++;
-    cov_sr0vk1pn9.s[38]++;
+    cov_2h2wpqabwk.f[24]++;
+    cov_2h2wpqabwk.s[38]++;
     return requests.post("/articles/".concat(slug, "/comments"), {
       comment
     });
   },
   delete: (slug, commentId) => {
-    cov_sr0vk1pn9.f[25]++;
-    cov_sr0vk1pn9.s[39]++;
+    cov_2h2wpqabwk.f[25]++;
+    cov_2h2wpqabwk.s[39]++;
     return requests.del("/articles/".concat(slug, "/comments/").concat(commentId));
   },
   forArticle: slug => {
-    cov_sr0vk1pn9.f[26]++;
-    cov_sr0vk1pn9.s[40]++;
+    cov_2h2wpqabwk.f[26]++;
+    cov_2h2wpqabwk.s[40]++;
     return requests.get("/articles/".concat(slug, "/comments"));
   }
 });
-const Profile = (cov_sr0vk1pn9.s[41]++, {
+const Profile = (cov_2h2wpqabwk.s[41]++, {
   follow: username => {
-    cov_sr0vk1pn9.f[27]++;
-    cov_sr0vk1pn9.s[42]++;
+    cov_2h2wpqabwk.f[27]++;
+    cov_2h2wpqabwk.s[42]++;
     return requests.post("/profiles/".concat(username, "/follow"));
   },
   get: username => {
-    cov_sr0vk1pn9.f[28]++;
-    cov_sr0vk1pn9.s[43]++;
+    cov_2h2wpqabwk.f[28]++;
+    cov_2h2wpqabwk.s[43]++;
     return requests.get("/profiles/".concat(username));
   },
   unfollow: username => {
-    cov_sr0vk1pn9.f[29]++;
-    cov_sr0vk1pn9.s[44]++;
+    cov_2h2wpqabwk.f[29]++;
+    cov_2h2wpqabwk.s[44]++;
     return requests.del("/profiles/".concat(username, "/follow"));
   }
 });
@@ -38921,8 +38921,8 @@ var _default = {
   Profile,
   Tags,
   setToken: _token => {
-    cov_sr0vk1pn9.f[30]++;
-    cov_sr0vk1pn9.s[45]++;
+    cov_2h2wpqabwk.f[30]++;
+    cov_2h2wpqabwk.s[45]++;
     token = _token;
   }
 };
@@ -38930,13 +38930,13 @@ exports.default = _default;
 },{"superagent-promise":"../node_modules/superagent-promise/index.js","superagent":"../node_modules/superagent/lib/client.js"}],"../src/constants/actionTypes.js":[function(require,module,exports) {
 "use strict";
 
-var cov_hd9ieytc6 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/constants/actionTypes.js";
-  var hash = "9d9926cc7436a06aa1e373f619e52483b5c51e9e";
+var cov_1xunwkxnx7 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/constants/actionTypes.js";
+  var hash = "cbdc1dab476094e509845852c5e241d5758b8f63";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/constants/actionTypes.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/constants/actionTypes.js",
     statementMap: {
       "0": {
         start: {
@@ -39342,7 +39342,7 @@ var cov_hd9ieytc6 = function () {
     f: {},
     b: {},
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "9d9926cc7436a06aa1e373f619e52483b5c51e9e"
+    hash: "cbdc1dab476094e509845852c5e241d5758b8f63"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -39357,88 +39357,88 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.PROFILE_FAVORITES_PAGE_LOADED = exports.PROFILE_FAVORITES_PAGE_UNLOADED = exports.UNFOLLOW_USER = exports.FOLLOW_USER = exports.UPDATE_FIELD_EDITOR = exports.UPDATE_FIELD_AUTH = exports.REMOVE_TAG = exports.ADD_TAG = exports.EDITOR_PAGE_UNLOADED = exports.EDITOR_PAGE_LOADED = exports.ASYNC_END = exports.ASYNC_START = exports.REGISTER_PAGE_UNLOADED = exports.LOGIN_PAGE_UNLOADED = exports.REGISTER = exports.LOGOUT = exports.LOGIN = exports.PROFILE_PAGE_UNLOADED = exports.PROFILE_PAGE_LOADED = exports.CHANGE_TAB = exports.APPLY_TAG_FILTER = exports.SET_PAGE = exports.ARTICLE_UNFAVORITED = exports.ARTICLE_FAVORITED = exports.DELETE_COMMENT = exports.ADD_COMMENT = exports.ARTICLE_PAGE_UNLOADED = exports.ARTICLE_PAGE_LOADED = exports.HOME_PAGE_UNLOADED = exports.HOME_PAGE_LOADED = exports.SETTINGS_PAGE_UNLOADED = exports.DELETE_ARTICLE = exports.SETTINGS_SAVED = exports.ARTICLE_SUBMITTED = exports.REDIRECT = exports.APP_LOAD = void 0;
-const APP_LOAD = (cov_hd9ieytc6.s[0]++, 'APP_LOAD');
+const APP_LOAD = (cov_1xunwkxnx7.s[0]++, 'APP_LOAD');
 exports.APP_LOAD = APP_LOAD;
-const REDIRECT = (cov_hd9ieytc6.s[1]++, 'REDIRECT');
+const REDIRECT = (cov_1xunwkxnx7.s[1]++, 'REDIRECT');
 exports.REDIRECT = REDIRECT;
-const ARTICLE_SUBMITTED = (cov_hd9ieytc6.s[2]++, 'ARTICLE_SUBMITTED');
+const ARTICLE_SUBMITTED = (cov_1xunwkxnx7.s[2]++, 'ARTICLE_SUBMITTED');
 exports.ARTICLE_SUBMITTED = ARTICLE_SUBMITTED;
-const SETTINGS_SAVED = (cov_hd9ieytc6.s[3]++, 'SETTINGS_SAVED');
+const SETTINGS_SAVED = (cov_1xunwkxnx7.s[3]++, 'SETTINGS_SAVED');
 exports.SETTINGS_SAVED = SETTINGS_SAVED;
-const DELETE_ARTICLE = (cov_hd9ieytc6.s[4]++, 'DELETE_ARTICLE');
+const DELETE_ARTICLE = (cov_1xunwkxnx7.s[4]++, 'DELETE_ARTICLE');
 exports.DELETE_ARTICLE = DELETE_ARTICLE;
-const SETTINGS_PAGE_UNLOADED = (cov_hd9ieytc6.s[5]++, 'SETTINGS_PAGE_UNLOADED');
+const SETTINGS_PAGE_UNLOADED = (cov_1xunwkxnx7.s[5]++, 'SETTINGS_PAGE_UNLOADED');
 exports.SETTINGS_PAGE_UNLOADED = SETTINGS_PAGE_UNLOADED;
-const HOME_PAGE_LOADED = (cov_hd9ieytc6.s[6]++, 'HOME_PAGE_LOADED');
+const HOME_PAGE_LOADED = (cov_1xunwkxnx7.s[6]++, 'HOME_PAGE_LOADED');
 exports.HOME_PAGE_LOADED = HOME_PAGE_LOADED;
-const HOME_PAGE_UNLOADED = (cov_hd9ieytc6.s[7]++, 'HOME_PAGE_UNLOADED');
+const HOME_PAGE_UNLOADED = (cov_1xunwkxnx7.s[7]++, 'HOME_PAGE_UNLOADED');
 exports.HOME_PAGE_UNLOADED = HOME_PAGE_UNLOADED;
-const ARTICLE_PAGE_LOADED = (cov_hd9ieytc6.s[8]++, 'ARTICLE_PAGE_LOADED');
+const ARTICLE_PAGE_LOADED = (cov_1xunwkxnx7.s[8]++, 'ARTICLE_PAGE_LOADED');
 exports.ARTICLE_PAGE_LOADED = ARTICLE_PAGE_LOADED;
-const ARTICLE_PAGE_UNLOADED = (cov_hd9ieytc6.s[9]++, 'ARTICLE_PAGE_UNLOADED');
+const ARTICLE_PAGE_UNLOADED = (cov_1xunwkxnx7.s[9]++, 'ARTICLE_PAGE_UNLOADED');
 exports.ARTICLE_PAGE_UNLOADED = ARTICLE_PAGE_UNLOADED;
-const ADD_COMMENT = (cov_hd9ieytc6.s[10]++, 'ADD_COMMENT');
+const ADD_COMMENT = (cov_1xunwkxnx7.s[10]++, 'ADD_COMMENT');
 exports.ADD_COMMENT = ADD_COMMENT;
-const DELETE_COMMENT = (cov_hd9ieytc6.s[11]++, 'DELETE_COMMENT');
+const DELETE_COMMENT = (cov_1xunwkxnx7.s[11]++, 'DELETE_COMMENT');
 exports.DELETE_COMMENT = DELETE_COMMENT;
-const ARTICLE_FAVORITED = (cov_hd9ieytc6.s[12]++, 'ARTICLE_FAVORITED');
+const ARTICLE_FAVORITED = (cov_1xunwkxnx7.s[12]++, 'ARTICLE_FAVORITED');
 exports.ARTICLE_FAVORITED = ARTICLE_FAVORITED;
-const ARTICLE_UNFAVORITED = (cov_hd9ieytc6.s[13]++, 'ARTICLE_UNFAVORITED');
+const ARTICLE_UNFAVORITED = (cov_1xunwkxnx7.s[13]++, 'ARTICLE_UNFAVORITED');
 exports.ARTICLE_UNFAVORITED = ARTICLE_UNFAVORITED;
-const SET_PAGE = (cov_hd9ieytc6.s[14]++, 'SET_PAGE');
+const SET_PAGE = (cov_1xunwkxnx7.s[14]++, 'SET_PAGE');
 exports.SET_PAGE = SET_PAGE;
-const APPLY_TAG_FILTER = (cov_hd9ieytc6.s[15]++, 'APPLY_TAG_FILTER');
+const APPLY_TAG_FILTER = (cov_1xunwkxnx7.s[15]++, 'APPLY_TAG_FILTER');
 exports.APPLY_TAG_FILTER = APPLY_TAG_FILTER;
-const CHANGE_TAB = (cov_hd9ieytc6.s[16]++, 'CHANGE_TAB');
+const CHANGE_TAB = (cov_1xunwkxnx7.s[16]++, 'CHANGE_TAB');
 exports.CHANGE_TAB = CHANGE_TAB;
-const PROFILE_PAGE_LOADED = (cov_hd9ieytc6.s[17]++, 'PROFILE_PAGE_LOADED');
+const PROFILE_PAGE_LOADED = (cov_1xunwkxnx7.s[17]++, 'PROFILE_PAGE_LOADED');
 exports.PROFILE_PAGE_LOADED = PROFILE_PAGE_LOADED;
-const PROFILE_PAGE_UNLOADED = (cov_hd9ieytc6.s[18]++, 'PROFILE_PAGE_UNLOADED');
+const PROFILE_PAGE_UNLOADED = (cov_1xunwkxnx7.s[18]++, 'PROFILE_PAGE_UNLOADED');
 exports.PROFILE_PAGE_UNLOADED = PROFILE_PAGE_UNLOADED;
-const LOGIN = (cov_hd9ieytc6.s[19]++, 'LOGIN');
+const LOGIN = (cov_1xunwkxnx7.s[19]++, 'LOGIN');
 exports.LOGIN = LOGIN;
-const LOGOUT = (cov_hd9ieytc6.s[20]++, 'LOGOUT');
+const LOGOUT = (cov_1xunwkxnx7.s[20]++, 'LOGOUT');
 exports.LOGOUT = LOGOUT;
-const REGISTER = (cov_hd9ieytc6.s[21]++, 'REGISTER');
+const REGISTER = (cov_1xunwkxnx7.s[21]++, 'REGISTER');
 exports.REGISTER = REGISTER;
-const LOGIN_PAGE_UNLOADED = (cov_hd9ieytc6.s[22]++, 'LOGIN_PAGE_UNLOADED');
+const LOGIN_PAGE_UNLOADED = (cov_1xunwkxnx7.s[22]++, 'LOGIN_PAGE_UNLOADED');
 exports.LOGIN_PAGE_UNLOADED = LOGIN_PAGE_UNLOADED;
-const REGISTER_PAGE_UNLOADED = (cov_hd9ieytc6.s[23]++, 'REGISTER_PAGE_UNLOADED');
+const REGISTER_PAGE_UNLOADED = (cov_1xunwkxnx7.s[23]++, 'REGISTER_PAGE_UNLOADED');
 exports.REGISTER_PAGE_UNLOADED = REGISTER_PAGE_UNLOADED;
-const ASYNC_START = (cov_hd9ieytc6.s[24]++, 'ASYNC_START');
+const ASYNC_START = (cov_1xunwkxnx7.s[24]++, 'ASYNC_START');
 exports.ASYNC_START = ASYNC_START;
-const ASYNC_END = (cov_hd9ieytc6.s[25]++, 'ASYNC_END');
+const ASYNC_END = (cov_1xunwkxnx7.s[25]++, 'ASYNC_END');
 exports.ASYNC_END = ASYNC_END;
-const EDITOR_PAGE_LOADED = (cov_hd9ieytc6.s[26]++, 'EDITOR_PAGE_LOADED');
+const EDITOR_PAGE_LOADED = (cov_1xunwkxnx7.s[26]++, 'EDITOR_PAGE_LOADED');
 exports.EDITOR_PAGE_LOADED = EDITOR_PAGE_LOADED;
-const EDITOR_PAGE_UNLOADED = (cov_hd9ieytc6.s[27]++, 'EDITOR_PAGE_UNLOADED');
+const EDITOR_PAGE_UNLOADED = (cov_1xunwkxnx7.s[27]++, 'EDITOR_PAGE_UNLOADED');
 exports.EDITOR_PAGE_UNLOADED = EDITOR_PAGE_UNLOADED;
-const ADD_TAG = (cov_hd9ieytc6.s[28]++, 'ADD_TAG');
+const ADD_TAG = (cov_1xunwkxnx7.s[28]++, 'ADD_TAG');
 exports.ADD_TAG = ADD_TAG;
-const REMOVE_TAG = (cov_hd9ieytc6.s[29]++, 'REMOVE_TAG');
+const REMOVE_TAG = (cov_1xunwkxnx7.s[29]++, 'REMOVE_TAG');
 exports.REMOVE_TAG = REMOVE_TAG;
-const UPDATE_FIELD_AUTH = (cov_hd9ieytc6.s[30]++, 'UPDATE_FIELD_AUTH');
+const UPDATE_FIELD_AUTH = (cov_1xunwkxnx7.s[30]++, 'UPDATE_FIELD_AUTH');
 exports.UPDATE_FIELD_AUTH = UPDATE_FIELD_AUTH;
-const UPDATE_FIELD_EDITOR = (cov_hd9ieytc6.s[31]++, 'UPDATE_FIELD_EDITOR');
+const UPDATE_FIELD_EDITOR = (cov_1xunwkxnx7.s[31]++, 'UPDATE_FIELD_EDITOR');
 exports.UPDATE_FIELD_EDITOR = UPDATE_FIELD_EDITOR;
-const FOLLOW_USER = (cov_hd9ieytc6.s[32]++, 'FOLLOW_USER');
+const FOLLOW_USER = (cov_1xunwkxnx7.s[32]++, 'FOLLOW_USER');
 exports.FOLLOW_USER = FOLLOW_USER;
-const UNFOLLOW_USER = (cov_hd9ieytc6.s[33]++, 'UNFOLLOW_USER');
+const UNFOLLOW_USER = (cov_1xunwkxnx7.s[33]++, 'UNFOLLOW_USER');
 exports.UNFOLLOW_USER = UNFOLLOW_USER;
-const PROFILE_FAVORITES_PAGE_UNLOADED = (cov_hd9ieytc6.s[34]++, 'PROFILE_FAVORITES_PAGE_UNLOADED');
+const PROFILE_FAVORITES_PAGE_UNLOADED = (cov_1xunwkxnx7.s[34]++, 'PROFILE_FAVORITES_PAGE_UNLOADED');
 exports.PROFILE_FAVORITES_PAGE_UNLOADED = PROFILE_FAVORITES_PAGE_UNLOADED;
-const PROFILE_FAVORITES_PAGE_LOADED = (cov_hd9ieytc6.s[35]++, 'PROFILE_FAVORITES_PAGE_LOADED');
+const PROFILE_FAVORITES_PAGE_LOADED = (cov_1xunwkxnx7.s[35]++, 'PROFILE_FAVORITES_PAGE_LOADED');
 exports.PROFILE_FAVORITES_PAGE_LOADED = PROFILE_FAVORITES_PAGE_LOADED;
 },{}],"../src/middleware.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1l2mw8syfv = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/middleware.js";
-  var hash = "bf0fb46615ade64482de8ac8907a54680a2e70db";
+var cov_1rbi8gt3b2 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/middleware.js";
+  var hash = "49d4b95aaac6f04409aa97ffb886bc93ac7fe149";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/middleware.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/middleware.js",
     statementMap: {
       "0": {
         start: {
@@ -40547,7 +40547,7 @@ var cov_1l2mw8syfv = function () {
       "11": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "bf0fb46615ade64482de8ac8907a54680a2e70db"
+    hash: "49d4b95aaac6f04409aa97ffb886bc93ac7fe149"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -40569,160 +40569,160 @@ var _actionTypes = require("./constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1l2mw8syfv.s[0]++;
+cov_1rbi8gt3b2.s[0]++;
 
 const promiseMiddleware = store => {
-  cov_1l2mw8syfv.f[0]++;
-  cov_1l2mw8syfv.s[1]++;
+  cov_1rbi8gt3b2.f[0]++;
+  cov_1rbi8gt3b2.s[1]++;
   return next => {
-    cov_1l2mw8syfv.f[1]++;
-    cov_1l2mw8syfv.s[2]++;
+    cov_1rbi8gt3b2.f[1]++;
+    cov_1rbi8gt3b2.s[2]++;
     return action => {
-      cov_1l2mw8syfv.f[2]++;
-      cov_1l2mw8syfv.s[3]++;
+      cov_1rbi8gt3b2.f[2]++;
+      cov_1rbi8gt3b2.s[3]++;
 
       if (isPromise(action.payload)) {
-        cov_1l2mw8syfv.b[0][0]++;
-        cov_1l2mw8syfv.s[4]++;
+        cov_1rbi8gt3b2.b[0][0]++;
+        cov_1rbi8gt3b2.s[4]++;
         store.dispatch({
           type: _actionTypes.ASYNC_START,
           subtype: action.type
         });
-        const currentView = (cov_1l2mw8syfv.s[5]++, store.getState().viewChangeCounter);
-        const skipTracking = (cov_1l2mw8syfv.s[6]++, action.skipTracking);
-        cov_1l2mw8syfv.s[7]++;
+        const currentView = (cov_1rbi8gt3b2.s[5]++, store.getState().viewChangeCounter);
+        const skipTracking = (cov_1rbi8gt3b2.s[6]++, action.skipTracking);
+        cov_1rbi8gt3b2.s[7]++;
         action.payload.then(res => {
-          cov_1l2mw8syfv.f[3]++;
-          const currentState = (cov_1l2mw8syfv.s[8]++, store.getState());
-          cov_1l2mw8syfv.s[9]++;
+          cov_1rbi8gt3b2.f[3]++;
+          const currentState = (cov_1rbi8gt3b2.s[8]++, store.getState());
+          cov_1rbi8gt3b2.s[9]++;
 
-          if ((cov_1l2mw8syfv.b[2][0]++, !skipTracking) && (cov_1l2mw8syfv.b[2][1]++, currentState.viewChangeCounter !== currentView)) {
-            cov_1l2mw8syfv.b[1][0]++;
-            cov_1l2mw8syfv.s[10]++;
+          if ((cov_1rbi8gt3b2.b[2][0]++, !skipTracking) && (cov_1rbi8gt3b2.b[2][1]++, currentState.viewChangeCounter !== currentView)) {
+            cov_1rbi8gt3b2.b[1][0]++;
+            cov_1rbi8gt3b2.s[10]++;
             return;
           } else {
-            cov_1l2mw8syfv.b[1][1]++;
+            cov_1rbi8gt3b2.b[1][1]++;
           }
 
-          cov_1l2mw8syfv.s[11]++;
+          cov_1rbi8gt3b2.s[11]++;
           console.log('RESULT', res);
-          cov_1l2mw8syfv.s[12]++;
+          cov_1rbi8gt3b2.s[12]++;
           action.payload = res;
-          cov_1l2mw8syfv.s[13]++;
+          cov_1rbi8gt3b2.s[13]++;
           store.dispatch({
             type: _actionTypes.ASYNC_END,
             promise: action.payload
           });
-          cov_1l2mw8syfv.s[14]++;
+          cov_1rbi8gt3b2.s[14]++;
           store.dispatch(action);
         }, error => {
-          cov_1l2mw8syfv.f[4]++;
-          const currentState = (cov_1l2mw8syfv.s[15]++, store.getState());
-          cov_1l2mw8syfv.s[16]++;
+          cov_1rbi8gt3b2.f[4]++;
+          const currentState = (cov_1rbi8gt3b2.s[15]++, store.getState());
+          cov_1rbi8gt3b2.s[16]++;
 
-          if ((cov_1l2mw8syfv.b[4][0]++, !skipTracking) && (cov_1l2mw8syfv.b[4][1]++, currentState.viewChangeCounter !== currentView)) {
-            cov_1l2mw8syfv.b[3][0]++;
-            cov_1l2mw8syfv.s[17]++;
+          if ((cov_1rbi8gt3b2.b[4][0]++, !skipTracking) && (cov_1rbi8gt3b2.b[4][1]++, currentState.viewChangeCounter !== currentView)) {
+            cov_1rbi8gt3b2.b[3][0]++;
+            cov_1rbi8gt3b2.s[17]++;
             return;
           } else {
-            cov_1l2mw8syfv.b[3][1]++;
+            cov_1rbi8gt3b2.b[3][1]++;
           }
 
-          cov_1l2mw8syfv.s[18]++;
+          cov_1rbi8gt3b2.s[18]++;
           console.log('ERROR', error);
-          cov_1l2mw8syfv.s[19]++;
+          cov_1rbi8gt3b2.s[19]++;
           action.error = true;
-          cov_1l2mw8syfv.s[20]++;
+          cov_1rbi8gt3b2.s[20]++;
           action.payload = error.response.body;
-          cov_1l2mw8syfv.s[21]++;
+          cov_1rbi8gt3b2.s[21]++;
 
           if (action.payload.errors.unauthorized) {
-            cov_1l2mw8syfv.b[5][0]++;
-            cov_1l2mw8syfv.s[22]++;
+            cov_1rbi8gt3b2.b[5][0]++;
+            cov_1rbi8gt3b2.s[22]++;
             store.dispatch({
               type: _actionTypes.LOGOUT
             });
-            cov_1l2mw8syfv.s[23]++;
+            cov_1rbi8gt3b2.s[23]++;
             store.dispatch({
               type: _actionTypes.APP_LOAD
             });
-            cov_1l2mw8syfv.s[24]++;
+            cov_1rbi8gt3b2.s[24]++;
             return;
           } else {
-            cov_1l2mw8syfv.b[5][1]++;
-            cov_1l2mw8syfv.s[25]++;
+            cov_1rbi8gt3b2.b[5][1]++;
+            cov_1rbi8gt3b2.s[25]++;
 
             if (!action.skipTracking) {
-              cov_1l2mw8syfv.b[6][0]++;
-              cov_1l2mw8syfv.s[26]++;
+              cov_1rbi8gt3b2.b[6][0]++;
+              cov_1rbi8gt3b2.s[26]++;
               store.dispatch({
                 type: _actionTypes.ASYNC_END,
                 promise: action.payload
               });
             } else {
-              cov_1l2mw8syfv.b[6][1]++;
+              cov_1rbi8gt3b2.b[6][1]++;
             }
           }
 
-          cov_1l2mw8syfv.s[27]++;
+          cov_1rbi8gt3b2.s[27]++;
           store.dispatch(action);
         });
-        cov_1l2mw8syfv.s[28]++;
+        cov_1rbi8gt3b2.s[28]++;
         return;
       } else {
-        cov_1l2mw8syfv.b[0][1]++;
+        cov_1rbi8gt3b2.b[0][1]++;
       }
 
-      cov_1l2mw8syfv.s[29]++;
+      cov_1rbi8gt3b2.s[29]++;
       next(action);
     };
   };
 };
 
 exports.promiseMiddleware = promiseMiddleware;
-cov_1l2mw8syfv.s[30]++;
+cov_1rbi8gt3b2.s[30]++;
 
 const localStorageMiddleware = store => {
-  cov_1l2mw8syfv.f[5]++;
-  cov_1l2mw8syfv.s[31]++;
+  cov_1rbi8gt3b2.f[5]++;
+  cov_1rbi8gt3b2.s[31]++;
   return next => {
-    cov_1l2mw8syfv.f[6]++;
-    cov_1l2mw8syfv.s[32]++;
+    cov_1rbi8gt3b2.f[6]++;
+    cov_1rbi8gt3b2.s[32]++;
     return action => {
-      cov_1l2mw8syfv.f[7]++;
-      cov_1l2mw8syfv.s[33]++;
+      cov_1rbi8gt3b2.f[7]++;
+      cov_1rbi8gt3b2.s[33]++;
 
-      if ((cov_1l2mw8syfv.b[8][0]++, action.type === _actionTypes.REGISTER) || (cov_1l2mw8syfv.b[8][1]++, action.type === _actionTypes.LOGIN)) {
-        cov_1l2mw8syfv.b[7][0]++;
-        cov_1l2mw8syfv.s[34]++;
+      if ((cov_1rbi8gt3b2.b[8][0]++, action.type === _actionTypes.REGISTER) || (cov_1rbi8gt3b2.b[8][1]++, action.type === _actionTypes.LOGIN)) {
+        cov_1rbi8gt3b2.b[7][0]++;
+        cov_1rbi8gt3b2.s[34]++;
 
         if (!action.error) {
-          cov_1l2mw8syfv.b[9][0]++;
-          cov_1l2mw8syfv.s[35]++;
+          cov_1rbi8gt3b2.b[9][0]++;
+          cov_1rbi8gt3b2.s[35]++;
           window.localStorage.setItem('jwt', action.payload.user.token);
-          cov_1l2mw8syfv.s[36]++;
+          cov_1rbi8gt3b2.s[36]++;
 
           _agent.default.setToken(action.payload.user.token);
         } else {
-          cov_1l2mw8syfv.b[9][1]++;
+          cov_1rbi8gt3b2.b[9][1]++;
         }
       } else {
-        cov_1l2mw8syfv.b[7][1]++;
-        cov_1l2mw8syfv.s[37]++;
+        cov_1rbi8gt3b2.b[7][1]++;
+        cov_1rbi8gt3b2.s[37]++;
 
         if (action.type === _actionTypes.LOGOUT) {
-          cov_1l2mw8syfv.b[10][0]++;
-          cov_1l2mw8syfv.s[38]++;
+          cov_1rbi8gt3b2.b[10][0]++;
+          cov_1rbi8gt3b2.s[38]++;
           window.localStorage.setItem('jwt', '');
-          cov_1l2mw8syfv.s[39]++;
+          cov_1rbi8gt3b2.s[39]++;
 
           _agent.default.setToken(null);
         } else {
-          cov_1l2mw8syfv.b[10][1]++;
+          cov_1rbi8gt3b2.b[10][1]++;
         }
       }
 
-      cov_1l2mw8syfv.s[40]++;
+      cov_1rbi8gt3b2.s[40]++;
       next(action);
     };
   };
@@ -40731,20 +40731,20 @@ const localStorageMiddleware = store => {
 exports.localStorageMiddleware = localStorageMiddleware;
 
 function isPromise(v) {
-  cov_1l2mw8syfv.f[8]++;
-  cov_1l2mw8syfv.s[41]++;
-  return (cov_1l2mw8syfv.b[11][0]++, v) && (cov_1l2mw8syfv.b[11][1]++, typeof v.then === 'function');
+  cov_1rbi8gt3b2.f[8]++;
+  cov_1rbi8gt3b2.s[41]++;
+  return (cov_1rbi8gt3b2.b[11][0]++, v) && (cov_1rbi8gt3b2.b[11][1]++, typeof v.then === 'function');
 }
 },{"./agent":"../src/agent.js","./constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/reducers/article.js":[function(require,module,exports) {
 "use strict";
 
-var cov_2aw68diw5u = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/article.js";
-  var hash = "315dcdc28afa621d4d142eeaa500f9b1858399ec";
+var cov_14wo891lzk = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/article.js";
+  var hash = "89ba51decbe2351ac726bbb4267049648a283042";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/article.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/article.js",
     statementMap: {
       "0": {
         start: {
@@ -41084,7 +41084,7 @@ var cov_2aw68diw5u = function () {
       "4": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "315dcdc28afa621d4d142eeaa500f9b1858399ec"
+    hash: "89ba51decbe2351ac726bbb4267049648a283042"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -41102,47 +41102,47 @@ exports.default = void 0;
 
 var _actionTypes = require("../constants/actionTypes");
 
-var _default = (state = (cov_2aw68diw5u.b[0][0]++, {}), action) => {
-  cov_2aw68diw5u.f[0]++;
-  cov_2aw68diw5u.s[0]++;
+var _default = (state = (cov_14wo891lzk.b[0][0]++, {}), action) => {
+  cov_14wo891lzk.f[0]++;
+  cov_14wo891lzk.s[0]++;
 
   switch (action.type) {
     case _actionTypes.ARTICLE_PAGE_LOADED:
-      cov_2aw68diw5u.b[1][0]++;
-      cov_2aw68diw5u.s[1]++;
+      cov_14wo891lzk.b[1][0]++;
+      cov_14wo891lzk.s[1]++;
       return { ...state,
         article: action.payload[0].article,
         comments: action.payload[1].comments
       };
 
     case _actionTypes.ARTICLE_PAGE_UNLOADED:
-      cov_2aw68diw5u.b[1][1]++;
-      cov_2aw68diw5u.s[2]++;
+      cov_14wo891lzk.b[1][1]++;
+      cov_14wo891lzk.s[2]++;
       return {};
 
     case _actionTypes.ADD_COMMENT:
-      cov_2aw68diw5u.b[1][2]++;
-      cov_2aw68diw5u.s[3]++;
+      cov_14wo891lzk.b[1][2]++;
+      cov_14wo891lzk.s[3]++;
       return { ...state,
-        commentErrors: action.error ? (cov_2aw68diw5u.b[2][0]++, action.payload.errors) : (cov_2aw68diw5u.b[2][1]++, null),
-        comments: action.error ? (cov_2aw68diw5u.b[3][0]++, null) : (cov_2aw68diw5u.b[3][1]++, ((cov_2aw68diw5u.b[4][0]++, state.comments) || (cov_2aw68diw5u.b[4][1]++, [])).concat([action.payload.comment]))
+        commentErrors: action.error ? (cov_14wo891lzk.b[2][0]++, action.payload.errors) : (cov_14wo891lzk.b[2][1]++, null),
+        comments: action.error ? (cov_14wo891lzk.b[3][0]++, null) : (cov_14wo891lzk.b[3][1]++, ((cov_14wo891lzk.b[4][0]++, state.comments) || (cov_14wo891lzk.b[4][1]++, [])).concat([action.payload.comment]))
       };
 
     case _actionTypes.DELETE_COMMENT:
-      cov_2aw68diw5u.b[1][3]++;
-      const commentId = (cov_2aw68diw5u.s[4]++, action.commentId);
-      cov_2aw68diw5u.s[5]++;
+      cov_14wo891lzk.b[1][3]++;
+      const commentId = (cov_14wo891lzk.s[4]++, action.commentId);
+      cov_14wo891lzk.s[5]++;
       return { ...state,
         comments: state.comments.filter(comment => {
-          cov_2aw68diw5u.f[1]++;
-          cov_2aw68diw5u.s[6]++;
+          cov_14wo891lzk.f[1]++;
+          cov_14wo891lzk.s[6]++;
           return comment.id !== commentId;
         })
       };
 
     default:
-      cov_2aw68diw5u.b[1][4]++;
-      cov_2aw68diw5u.s[7]++;
+      cov_14wo891lzk.b[1][4]++;
+      cov_14wo891lzk.s[7]++;
       return state;
   }
 };
@@ -41151,13 +41151,13 @@ exports.default = _default;
 },{"../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/reducers/articleList.js":[function(require,module,exports) {
 "use strict";
 
-var cov_xwok6j5xm = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/articleList.js";
-  var hash = "678e3b28c25b88cc6de13f905e9da4f6dcd1e5aa";
+var cov_22kykam9ty = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/articleList.js";
+  var hash = "c605b2dea7a6120a3e34ddb2fcd7f7902f214094";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/articleList.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/articleList.js",
     statementMap: {
       "0": {
         start: {
@@ -41547,7 +41547,7 @@ var cov_xwok6j5xm = function () {
       "2": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "678e3b28c25b88cc6de13f905e9da4f6dcd1e5aa"
+    hash: "c605b2dea7a6120a3e34ddb2fcd7f7902f214094"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -41565,41 +41565,41 @@ exports.default = void 0;
 
 var _actionTypes = require("../constants/actionTypes");
 
-var _default = (state = (cov_xwok6j5xm.b[0][0]++, {}), action) => {
-  cov_xwok6j5xm.f[0]++;
-  cov_xwok6j5xm.s[0]++;
+var _default = (state = (cov_22kykam9ty.b[0][0]++, {}), action) => {
+  cov_22kykam9ty.f[0]++;
+  cov_22kykam9ty.s[0]++;
 
   switch (action.type) {
     case _actionTypes.ARTICLE_FAVORITED:
-      cov_xwok6j5xm.b[1][0]++;
+      cov_22kykam9ty.b[1][0]++;
 
     case _actionTypes.ARTICLE_UNFAVORITED:
-      cov_xwok6j5xm.b[1][1]++;
-      cov_xwok6j5xm.s[1]++;
+      cov_22kykam9ty.b[1][1]++;
+      cov_22kykam9ty.s[1]++;
       return { ...state,
         articles: state.articles.map(article => {
-          cov_xwok6j5xm.f[1]++;
-          cov_xwok6j5xm.s[2]++;
+          cov_22kykam9ty.f[1]++;
+          cov_22kykam9ty.s[2]++;
 
           if (article.slug === action.payload.article.slug) {
-            cov_xwok6j5xm.b[2][0]++;
-            cov_xwok6j5xm.s[3]++;
+            cov_22kykam9ty.b[2][0]++;
+            cov_22kykam9ty.s[3]++;
             return { ...article,
               favorited: action.payload.article.favorited,
               favoritesCount: action.payload.article.favoritesCount
             };
           } else {
-            cov_xwok6j5xm.b[2][1]++;
+            cov_22kykam9ty.b[2][1]++;
           }
 
-          cov_xwok6j5xm.s[4]++;
+          cov_22kykam9ty.s[4]++;
           return article;
         })
       };
 
     case _actionTypes.SET_PAGE:
-      cov_xwok6j5xm.b[1][2]++;
-      cov_xwok6j5xm.s[5]++;
+      cov_22kykam9ty.b[1][2]++;
+      cov_22kykam9ty.s[5]++;
       return { ...state,
         articles: action.payload.articles,
         articlesCount: action.payload.articlesCount,
@@ -41607,8 +41607,8 @@ var _default = (state = (cov_xwok6j5xm.b[0][0]++, {}), action) => {
       };
 
     case _actionTypes.APPLY_TAG_FILTER:
-      cov_xwok6j5xm.b[1][3]++;
-      cov_xwok6j5xm.s[6]++;
+      cov_22kykam9ty.b[1][3]++;
+      cov_22kykam9ty.s[6]++;
       return { ...state,
         pager: action.pager,
         articles: action.payload.articles,
@@ -41619,8 +41619,8 @@ var _default = (state = (cov_xwok6j5xm.b[0][0]++, {}), action) => {
       };
 
     case _actionTypes.HOME_PAGE_LOADED:
-      cov_xwok6j5xm.b[1][4]++;
-      cov_xwok6j5xm.s[7]++;
+      cov_22kykam9ty.b[1][4]++;
+      cov_22kykam9ty.s[7]++;
       return { ...state,
         pager: action.pager,
         tags: action.payload[0].tags,
@@ -41631,13 +41631,13 @@ var _default = (state = (cov_xwok6j5xm.b[0][0]++, {}), action) => {
       };
 
     case _actionTypes.HOME_PAGE_UNLOADED:
-      cov_xwok6j5xm.b[1][5]++;
-      cov_xwok6j5xm.s[8]++;
+      cov_22kykam9ty.b[1][5]++;
+      cov_22kykam9ty.s[8]++;
       return {};
 
     case _actionTypes.CHANGE_TAB:
-      cov_xwok6j5xm.b[1][6]++;
-      cov_xwok6j5xm.s[9]++;
+      cov_22kykam9ty.b[1][6]++;
+      cov_22kykam9ty.s[9]++;
       return { ...state,
         pager: action.pager,
         articles: action.payload.articles,
@@ -41648,11 +41648,11 @@ var _default = (state = (cov_xwok6j5xm.b[0][0]++, {}), action) => {
       };
 
     case _actionTypes.PROFILE_PAGE_LOADED:
-      cov_xwok6j5xm.b[1][7]++;
+      cov_22kykam9ty.b[1][7]++;
 
     case _actionTypes.PROFILE_FAVORITES_PAGE_LOADED:
-      cov_xwok6j5xm.b[1][8]++;
-      cov_xwok6j5xm.s[10]++;
+      cov_22kykam9ty.b[1][8]++;
+      cov_22kykam9ty.s[10]++;
       return { ...state,
         pager: action.pager,
         articles: action.payload[1].articles,
@@ -41661,16 +41661,16 @@ var _default = (state = (cov_xwok6j5xm.b[0][0]++, {}), action) => {
       };
 
     case _actionTypes.PROFILE_PAGE_UNLOADED:
-      cov_xwok6j5xm.b[1][9]++;
+      cov_22kykam9ty.b[1][9]++;
 
     case _actionTypes.PROFILE_FAVORITES_PAGE_UNLOADED:
-      cov_xwok6j5xm.b[1][10]++;
-      cov_xwok6j5xm.s[11]++;
+      cov_22kykam9ty.b[1][10]++;
+      cov_22kykam9ty.s[11]++;
       return {};
 
     default:
-      cov_xwok6j5xm.b[1][11]++;
-      cov_xwok6j5xm.s[12]++;
+      cov_22kykam9ty.b[1][11]++;
+      cov_22kykam9ty.s[12]++;
       return state;
   }
 };
@@ -41679,13 +41679,13 @@ exports.default = _default;
 },{"../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/reducers/auth.js":[function(require,module,exports) {
 "use strict";
 
-var cov_20gj8wxmp2 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/auth.js";
-  var hash = "5e693d5e9d7410971b95ed3bbbbbf7654492db77";
+var cov_1s8wfvwvta = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/auth.js";
+  var hash = "fdbff14ad545c11d1afc6e085b82d4334303126a";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/auth.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/auth.js",
     statementMap: {
       "0": {
         start: {
@@ -42029,7 +42029,7 @@ var cov_20gj8wxmp2 = function () {
       "4": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "5e693d5e9d7410971b95ed3bbbbbf7654492db77"
+    hash: "fdbff14ad545c11d1afc6e085b82d4334303126a"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -42047,61 +42047,61 @@ exports.default = void 0;
 
 var _actionTypes = require("../constants/actionTypes");
 
-var _default = (state = (cov_20gj8wxmp2.b[0][0]++, {}), action) => {
-  cov_20gj8wxmp2.f[0]++;
-  cov_20gj8wxmp2.s[0]++;
+var _default = (state = (cov_1s8wfvwvta.b[0][0]++, {}), action) => {
+  cov_1s8wfvwvta.f[0]++;
+  cov_1s8wfvwvta.s[0]++;
 
   switch (action.type) {
     case _actionTypes.LOGIN:
-      cov_20gj8wxmp2.b[1][0]++;
+      cov_1s8wfvwvta.b[1][0]++;
 
     case _actionTypes.REGISTER:
-      cov_20gj8wxmp2.b[1][1]++;
-      cov_20gj8wxmp2.s[1]++;
+      cov_1s8wfvwvta.b[1][1]++;
+      cov_1s8wfvwvta.s[1]++;
       return { ...state,
         inProgress: false,
-        errors: action.error ? (cov_20gj8wxmp2.b[2][0]++, action.payload.errors) : (cov_20gj8wxmp2.b[2][1]++, null)
+        errors: action.error ? (cov_1s8wfvwvta.b[2][0]++, action.payload.errors) : (cov_1s8wfvwvta.b[2][1]++, null)
       };
 
     case _actionTypes.LOGIN_PAGE_UNLOADED:
-      cov_20gj8wxmp2.b[1][2]++;
+      cov_1s8wfvwvta.b[1][2]++;
 
     case _actionTypes.REGISTER_PAGE_UNLOADED:
-      cov_20gj8wxmp2.b[1][3]++;
-      cov_20gj8wxmp2.s[2]++;
+      cov_1s8wfvwvta.b[1][3]++;
+      cov_1s8wfvwvta.s[2]++;
       return {};
 
     case _actionTypes.ASYNC_START:
-      cov_20gj8wxmp2.b[1][4]++;
-      cov_20gj8wxmp2.s[3]++;
+      cov_1s8wfvwvta.b[1][4]++;
+      cov_1s8wfvwvta.s[3]++;
 
-      if ((cov_20gj8wxmp2.b[4][0]++, action.subtype === _actionTypes.LOGIN) || (cov_20gj8wxmp2.b[4][1]++, action.subtype === _actionTypes.REGISTER)) {
-        cov_20gj8wxmp2.b[3][0]++;
-        cov_20gj8wxmp2.s[4]++;
+      if ((cov_1s8wfvwvta.b[4][0]++, action.subtype === _actionTypes.LOGIN) || (cov_1s8wfvwvta.b[4][1]++, action.subtype === _actionTypes.REGISTER)) {
+        cov_1s8wfvwvta.b[3][0]++;
+        cov_1s8wfvwvta.s[4]++;
         return { ...state,
           inProgress: true
         };
       } else {
-        cov_20gj8wxmp2.b[3][1]++;
+        cov_1s8wfvwvta.b[3][1]++;
       }
 
-      cov_20gj8wxmp2.s[5]++;
+      cov_1s8wfvwvta.s[5]++;
       break;
 
     case _actionTypes.UPDATE_FIELD_AUTH:
-      cov_20gj8wxmp2.b[1][5]++;
-      cov_20gj8wxmp2.s[6]++;
+      cov_1s8wfvwvta.b[1][5]++;
+      cov_1s8wfvwvta.s[6]++;
       return { ...state,
         [action.key]: action.value
       };
 
     default:
-      cov_20gj8wxmp2.b[1][6]++;
-      cov_20gj8wxmp2.s[7]++;
+      cov_1s8wfvwvta.b[1][6]++;
+      cov_1s8wfvwvta.s[7]++;
       return state;
   }
 
-  cov_20gj8wxmp2.s[8]++;
+  cov_1s8wfvwvta.s[8]++;
   return state;
 };
 
@@ -42109,13 +42109,13 @@ exports.default = _default;
 },{"../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/reducers/common.js":[function(require,module,exports) {
 "use strict";
 
-var cov_28uwg28as8 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/common.js";
-  var hash = "cf789872f042f9f9dd7d109b08367326a8083cdf";
+var cov_1v7v6zfbvr = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/common.js";
+  var hash = "d660d30a729b7c2f352bbc66b102f6ce6660ad81";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/common.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/common.js",
     statementMap: {
       "0": {
         start: {
@@ -42718,7 +42718,7 @@ var cov_28uwg28as8 = function () {
       "8": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "cf789872f042f9f9dd7d109b08367326a8083cdf"
+    hash: "d660d30a729b7c2f352bbc66b102f6ce6660ad81"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -42736,36 +42736,36 @@ exports.default = void 0;
 
 var _actionTypes = require("../constants/actionTypes");
 
-const defaultState = (cov_28uwg28as8.s[0]++, {
+const defaultState = (cov_1v7v6zfbvr.s[0]++, {
   appName: 'Conduit',
   token: null,
   viewChangeCounter: 0
 });
 
-var _default = (state = (cov_28uwg28as8.b[0][0]++, defaultState), action) => {
-  cov_28uwg28as8.f[0]++;
-  cov_28uwg28as8.s[1]++;
+var _default = (state = (cov_1v7v6zfbvr.b[0][0]++, defaultState), action) => {
+  cov_1v7v6zfbvr.f[0]++;
+  cov_1v7v6zfbvr.s[1]++;
 
   switch (action.type) {
     case _actionTypes.APP_LOAD:
-      cov_28uwg28as8.b[1][0]++;
-      cov_28uwg28as8.s[2]++;
+      cov_1v7v6zfbvr.b[1][0]++;
+      cov_1v7v6zfbvr.s[2]++;
       return { ...state,
-        token: (cov_28uwg28as8.b[2][0]++, action.token) || (cov_28uwg28as8.b[2][1]++, null),
+        token: (cov_1v7v6zfbvr.b[2][0]++, action.token) || (cov_1v7v6zfbvr.b[2][1]++, null),
         appLoaded: true,
-        currentUser: action.payload ? (cov_28uwg28as8.b[3][0]++, action.payload.user) : (cov_28uwg28as8.b[3][1]++, null)
+        currentUser: action.payload ? (cov_1v7v6zfbvr.b[3][0]++, action.payload.user) : (cov_1v7v6zfbvr.b[3][1]++, null)
       };
 
     case _actionTypes.REDIRECT:
-      cov_28uwg28as8.b[1][1]++;
-      cov_28uwg28as8.s[3]++;
+      cov_1v7v6zfbvr.b[1][1]++;
+      cov_1v7v6zfbvr.s[3]++;
       return { ...state,
         redirectTo: null
       };
 
     case _actionTypes.LOGOUT:
-      cov_28uwg28as8.b[1][2]++;
-      cov_28uwg28as8.s[4]++;
+      cov_1v7v6zfbvr.b[1][2]++;
+      cov_1v7v6zfbvr.s[4]++;
       return { ...state,
         redirectTo: '/',
         token: null,
@@ -42773,71 +42773,71 @@ var _default = (state = (cov_28uwg28as8.b[0][0]++, defaultState), action) => {
       };
 
     case _actionTypes.ARTICLE_SUBMITTED:
-      cov_28uwg28as8.b[1][3]++;
-      const redirectUrl = (cov_28uwg28as8.s[5]++, "/article/".concat(action.payload.article.slug));
-      cov_28uwg28as8.s[6]++;
+      cov_1v7v6zfbvr.b[1][3]++;
+      const redirectUrl = (cov_1v7v6zfbvr.s[5]++, "/article/".concat(action.payload.article.slug));
+      cov_1v7v6zfbvr.s[6]++;
       return { ...state,
         redirectTo: redirectUrl
       };
 
     case _actionTypes.SETTINGS_SAVED:
-      cov_28uwg28as8.b[1][4]++;
-      cov_28uwg28as8.s[7]++;
+      cov_1v7v6zfbvr.b[1][4]++;
+      cov_1v7v6zfbvr.s[7]++;
       return { ...state,
-        redirectTo: action.error ? (cov_28uwg28as8.b[4][0]++, null) : (cov_28uwg28as8.b[4][1]++, '/'),
-        currentUser: action.error ? (cov_28uwg28as8.b[5][0]++, null) : (cov_28uwg28as8.b[5][1]++, action.payload.user)
+        redirectTo: action.error ? (cov_1v7v6zfbvr.b[4][0]++, null) : (cov_1v7v6zfbvr.b[4][1]++, '/'),
+        currentUser: action.error ? (cov_1v7v6zfbvr.b[5][0]++, null) : (cov_1v7v6zfbvr.b[5][1]++, action.payload.user)
       };
 
     case _actionTypes.LOGIN:
-      cov_28uwg28as8.b[1][5]++;
+      cov_1v7v6zfbvr.b[1][5]++;
 
     case _actionTypes.REGISTER:
-      cov_28uwg28as8.b[1][6]++;
-      cov_28uwg28as8.s[8]++;
+      cov_1v7v6zfbvr.b[1][6]++;
+      cov_1v7v6zfbvr.s[8]++;
       return { ...state,
-        redirectTo: action.error ? (cov_28uwg28as8.b[6][0]++, null) : (cov_28uwg28as8.b[6][1]++, '/'),
-        token: action.error ? (cov_28uwg28as8.b[7][0]++, null) : (cov_28uwg28as8.b[7][1]++, action.payload.user.token),
-        currentUser: action.error ? (cov_28uwg28as8.b[8][0]++, null) : (cov_28uwg28as8.b[8][1]++, action.payload.user)
+        redirectTo: action.error ? (cov_1v7v6zfbvr.b[6][0]++, null) : (cov_1v7v6zfbvr.b[6][1]++, '/'),
+        token: action.error ? (cov_1v7v6zfbvr.b[7][0]++, null) : (cov_1v7v6zfbvr.b[7][1]++, action.payload.user.token),
+        currentUser: action.error ? (cov_1v7v6zfbvr.b[8][0]++, null) : (cov_1v7v6zfbvr.b[8][1]++, action.payload.user)
       };
 
     case _actionTypes.DELETE_ARTICLE:
-      cov_28uwg28as8.b[1][7]++;
-      cov_28uwg28as8.s[9]++;
+      cov_1v7v6zfbvr.b[1][7]++;
+      cov_1v7v6zfbvr.s[9]++;
       return { ...state,
         redirectTo: '/'
       };
 
     case _actionTypes.ARTICLE_PAGE_UNLOADED:
-      cov_28uwg28as8.b[1][8]++;
+      cov_1v7v6zfbvr.b[1][8]++;
 
     case _actionTypes.EDITOR_PAGE_UNLOADED:
-      cov_28uwg28as8.b[1][9]++;
+      cov_1v7v6zfbvr.b[1][9]++;
 
     case _actionTypes.HOME_PAGE_UNLOADED:
-      cov_28uwg28as8.b[1][10]++;
+      cov_1v7v6zfbvr.b[1][10]++;
 
     case _actionTypes.PROFILE_PAGE_UNLOADED:
-      cov_28uwg28as8.b[1][11]++;
+      cov_1v7v6zfbvr.b[1][11]++;
 
     case _actionTypes.PROFILE_FAVORITES_PAGE_UNLOADED:
-      cov_28uwg28as8.b[1][12]++;
+      cov_1v7v6zfbvr.b[1][12]++;
 
     case _actionTypes.SETTINGS_PAGE_UNLOADED:
-      cov_28uwg28as8.b[1][13]++;
+      cov_1v7v6zfbvr.b[1][13]++;
 
     case _actionTypes.LOGIN_PAGE_UNLOADED:
-      cov_28uwg28as8.b[1][14]++;
+      cov_1v7v6zfbvr.b[1][14]++;
 
     case _actionTypes.REGISTER_PAGE_UNLOADED:
-      cov_28uwg28as8.b[1][15]++;
-      cov_28uwg28as8.s[10]++;
+      cov_1v7v6zfbvr.b[1][15]++;
+      cov_1v7v6zfbvr.s[10]++;
       return { ...state,
         viewChangeCounter: state.viewChangeCounter + 1
       };
 
     default:
-      cov_28uwg28as8.b[1][16]++;
-      cov_28uwg28as8.s[11]++;
+      cov_1v7v6zfbvr.b[1][16]++;
+      cov_1v7v6zfbvr.s[11]++;
       return state;
   }
 };
@@ -42846,13 +42846,13 @@ exports.default = _default;
 },{"../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/reducers/editor.js":[function(require,module,exports) {
 "use strict";
 
-var cov_232q0sbvkb = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/editor.js";
-  var hash = "a2bcb4cbc57de874ff829e1b48bd40ae8dd09e9d";
+var cov_1mknrt3u5f = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/editor.js";
+  var hash = "65ff7f9b82cdb94e904d228636fd8b923c60a949";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/editor.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/editor.js",
     statementMap: {
       "0": {
         start: {
@@ -43410,7 +43410,7 @@ var cov_232q0sbvkb = function () {
       "8": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "a2bcb4cbc57de874ff829e1b48bd40ae8dd09e9d"
+    hash: "65ff7f9b82cdb94e904d228636fd8b923c60a949"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -43428,86 +43428,86 @@ exports.default = void 0;
 
 var _actionTypes = require("../constants/actionTypes");
 
-var _default = (state = (cov_232q0sbvkb.b[0][0]++, {}), action) => {
-  cov_232q0sbvkb.f[0]++;
-  cov_232q0sbvkb.s[0]++;
+var _default = (state = (cov_1mknrt3u5f.b[0][0]++, {}), action) => {
+  cov_1mknrt3u5f.f[0]++;
+  cov_1mknrt3u5f.s[0]++;
 
   switch (action.type) {
     case _actionTypes.EDITOR_PAGE_LOADED:
-      cov_232q0sbvkb.b[1][0]++;
-      cov_232q0sbvkb.s[1]++;
+      cov_1mknrt3u5f.b[1][0]++;
+      cov_1mknrt3u5f.s[1]++;
       return { ...state,
-        articleSlug: action.payload ? (cov_232q0sbvkb.b[2][0]++, action.payload.article.slug) : (cov_232q0sbvkb.b[2][1]++, ''),
-        title: action.payload ? (cov_232q0sbvkb.b[3][0]++, action.payload.article.title) : (cov_232q0sbvkb.b[3][1]++, ''),
-        description: action.payload ? (cov_232q0sbvkb.b[4][0]++, action.payload.article.description) : (cov_232q0sbvkb.b[4][1]++, ''),
-        body: action.payload ? (cov_232q0sbvkb.b[5][0]++, action.payload.article.body) : (cov_232q0sbvkb.b[5][1]++, ''),
+        articleSlug: action.payload ? (cov_1mknrt3u5f.b[2][0]++, action.payload.article.slug) : (cov_1mknrt3u5f.b[2][1]++, ''),
+        title: action.payload ? (cov_1mknrt3u5f.b[3][0]++, action.payload.article.title) : (cov_1mknrt3u5f.b[3][1]++, ''),
+        description: action.payload ? (cov_1mknrt3u5f.b[4][0]++, action.payload.article.description) : (cov_1mknrt3u5f.b[4][1]++, ''),
+        body: action.payload ? (cov_1mknrt3u5f.b[5][0]++, action.payload.article.body) : (cov_1mknrt3u5f.b[5][1]++, ''),
         tagInput: '',
-        tagList: action.payload ? (cov_232q0sbvkb.b[6][0]++, action.payload.article.tagList) : (cov_232q0sbvkb.b[6][1]++, [])
+        tagList: action.payload ? (cov_1mknrt3u5f.b[6][0]++, action.payload.article.tagList) : (cov_1mknrt3u5f.b[6][1]++, [])
       };
 
     case _actionTypes.EDITOR_PAGE_UNLOADED:
-      cov_232q0sbvkb.b[1][1]++;
-      cov_232q0sbvkb.s[2]++;
+      cov_1mknrt3u5f.b[1][1]++;
+      cov_1mknrt3u5f.s[2]++;
       return {};
 
     case _actionTypes.ARTICLE_SUBMITTED:
-      cov_232q0sbvkb.b[1][2]++;
-      cov_232q0sbvkb.s[3]++;
+      cov_1mknrt3u5f.b[1][2]++;
+      cov_1mknrt3u5f.s[3]++;
       return { ...state,
         inProgress: null,
-        errors: action.error ? (cov_232q0sbvkb.b[7][0]++, action.payload.errors) : (cov_232q0sbvkb.b[7][1]++, null)
+        errors: action.error ? (cov_1mknrt3u5f.b[7][0]++, action.payload.errors) : (cov_1mknrt3u5f.b[7][1]++, null)
       };
 
     case _actionTypes.ASYNC_START:
-      cov_232q0sbvkb.b[1][3]++;
-      cov_232q0sbvkb.s[4]++;
+      cov_1mknrt3u5f.b[1][3]++;
+      cov_1mknrt3u5f.s[4]++;
 
       if (action.subtype === _actionTypes.ARTICLE_SUBMITTED) {
-        cov_232q0sbvkb.b[8][0]++;
-        cov_232q0sbvkb.s[5]++;
+        cov_1mknrt3u5f.b[8][0]++;
+        cov_1mknrt3u5f.s[5]++;
         return { ...state,
           inProgress: true
         };
       } else {
-        cov_232q0sbvkb.b[8][1]++;
+        cov_1mknrt3u5f.b[8][1]++;
       }
 
-      cov_232q0sbvkb.s[6]++;
+      cov_1mknrt3u5f.s[6]++;
       break;
 
     case _actionTypes.ADD_TAG:
-      cov_232q0sbvkb.b[1][4]++;
-      cov_232q0sbvkb.s[7]++;
+      cov_1mknrt3u5f.b[1][4]++;
+      cov_1mknrt3u5f.s[7]++;
       return { ...state,
         tagList: state.tagList.concat([state.tagInput]),
         tagInput: ''
       };
 
     case _actionTypes.REMOVE_TAG:
-      cov_232q0sbvkb.b[1][5]++;
-      cov_232q0sbvkb.s[8]++;
+      cov_1mknrt3u5f.b[1][5]++;
+      cov_1mknrt3u5f.s[8]++;
       return { ...state,
         tagList: state.tagList.filter(tag => {
-          cov_232q0sbvkb.f[1]++;
-          cov_232q0sbvkb.s[9]++;
+          cov_1mknrt3u5f.f[1]++;
+          cov_1mknrt3u5f.s[9]++;
           return tag !== action.tag;
         })
       };
 
     case _actionTypes.UPDATE_FIELD_EDITOR:
-      cov_232q0sbvkb.b[1][6]++;
-      cov_232q0sbvkb.s[10]++;
+      cov_1mknrt3u5f.b[1][6]++;
+      cov_1mknrt3u5f.s[10]++;
       return { ...state,
         [action.key]: action.value
       };
 
     default:
-      cov_232q0sbvkb.b[1][7]++;
-      cov_232q0sbvkb.s[11]++;
+      cov_1mknrt3u5f.b[1][7]++;
+      cov_1mknrt3u5f.s[11]++;
       return state;
   }
 
-  cov_232q0sbvkb.s[12]++;
+  cov_1mknrt3u5f.s[12]++;
   return state;
 };
 
@@ -43515,13 +43515,13 @@ exports.default = _default;
 },{"../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/reducers/home.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1g746sa3s0 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/home.js";
-  var hash = "2f3c4877536b8ee5a905ecdded1125e9e8e4c99d";
+var cov_1h1ge80o1r = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/home.js";
+  var hash = "b51b3cc1583663203c84eb5c92635fe7664687b1";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/home.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/home.js",
     statementMap: {
       "0": {
         start: {
@@ -43672,7 +43672,7 @@ var cov_1g746sa3s0 = function () {
       "1": [0, 0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "2f3c4877536b8ee5a905ecdded1125e9e8e4c99d"
+    hash: "b51b3cc1583663203c84eb5c92635fe7664687b1"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -43690,26 +43690,26 @@ exports.default = void 0;
 
 var _actionTypes = require("../constants/actionTypes");
 
-var _default = (state = (cov_1g746sa3s0.b[0][0]++, {}), action) => {
-  cov_1g746sa3s0.f[0]++;
-  cov_1g746sa3s0.s[0]++;
+var _default = (state = (cov_1h1ge80o1r.b[0][0]++, {}), action) => {
+  cov_1h1ge80o1r.f[0]++;
+  cov_1h1ge80o1r.s[0]++;
 
   switch (action.type) {
     case _actionTypes.HOME_PAGE_LOADED:
-      cov_1g746sa3s0.b[1][0]++;
-      cov_1g746sa3s0.s[1]++;
+      cov_1h1ge80o1r.b[1][0]++;
+      cov_1h1ge80o1r.s[1]++;
       return { ...state,
         tags: action.payload[0].tags
       };
 
     case _actionTypes.HOME_PAGE_UNLOADED:
-      cov_1g746sa3s0.b[1][1]++;
-      cov_1g746sa3s0.s[2]++;
+      cov_1h1ge80o1r.b[1][1]++;
+      cov_1h1ge80o1r.s[2]++;
       return {};
 
     default:
-      cov_1g746sa3s0.b[1][2]++;
-      cov_1g746sa3s0.s[3]++;
+      cov_1h1ge80o1r.b[1][2]++;
+      cov_1h1ge80o1r.s[3]++;
       return state;
   }
 };
@@ -43718,13 +43718,13 @@ exports.default = _default;
 },{"../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/reducers/profile.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1c0b1mf2eo = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/profile.js";
-  var hash = "4209f8408c5796ae8348e7231e3812e67f1e71ae";
+var cov_2b5g5bka2n = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/profile.js";
+  var hash = "53ec7a00642f8badb66d845f2e62d144289e4c75";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/profile.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/profile.js",
     statementMap: {
       "0": {
         start: {
@@ -43904,7 +43904,7 @@ var cov_1c0b1mf2eo = function () {
       "1": [0, 0, 0, 0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "4209f8408c5796ae8348e7231e3812e67f1e71ae"
+    hash: "53ec7a00642f8badb66d845f2e62d144289e4c75"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -43922,34 +43922,34 @@ exports.default = void 0;
 
 var _actionTypes = require("../constants/actionTypes");
 
-var _default = (state = (cov_1c0b1mf2eo.b[0][0]++, {}), action) => {
-  cov_1c0b1mf2eo.f[0]++;
-  cov_1c0b1mf2eo.s[0]++;
+var _default = (state = (cov_2b5g5bka2n.b[0][0]++, {}), action) => {
+  cov_2b5g5bka2n.f[0]++;
+  cov_2b5g5bka2n.s[0]++;
 
   switch (action.type) {
     case _actionTypes.PROFILE_PAGE_LOADED:
-      cov_1c0b1mf2eo.b[1][0]++;
-      cov_1c0b1mf2eo.s[1]++;
+      cov_2b5g5bka2n.b[1][0]++;
+      cov_2b5g5bka2n.s[1]++;
       return { ...action.payload[0].profile
       };
 
     case _actionTypes.PROFILE_PAGE_UNLOADED:
-      cov_1c0b1mf2eo.b[1][1]++;
-      cov_1c0b1mf2eo.s[2]++;
+      cov_2b5g5bka2n.b[1][1]++;
+      cov_2b5g5bka2n.s[2]++;
       return {};
 
     case _actionTypes.FOLLOW_USER:
-      cov_1c0b1mf2eo.b[1][2]++;
+      cov_2b5g5bka2n.b[1][2]++;
 
     case _actionTypes.UNFOLLOW_USER:
-      cov_1c0b1mf2eo.b[1][3]++;
-      cov_1c0b1mf2eo.s[3]++;
+      cov_2b5g5bka2n.b[1][3]++;
+      cov_2b5g5bka2n.s[3]++;
       return { ...action.payload.profile
       };
 
     default:
-      cov_1c0b1mf2eo.b[1][4]++;
-      cov_1c0b1mf2eo.s[4]++;
+      cov_2b5g5bka2n.b[1][4]++;
+      cov_2b5g5bka2n.s[4]++;
       return state;
   }
 };
@@ -43958,13 +43958,13 @@ exports.default = _default;
 },{"../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/reducers/settings.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1zi5gd85zz = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/settings.js";
-  var hash = "8908bc5ec5c8f147f391ee500b8285e483b4ede5";
+var cov_gn0x02muz = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/settings.js";
+  var hash = "f05b2f90ec91e431f1010467b1b63d7ff82e0433";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducers/settings.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducers/settings.js",
     statementMap: {
       "0": {
         start: {
@@ -44169,7 +44169,7 @@ var cov_1zi5gd85zz = function () {
       "2": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "8908bc5ec5c8f147f391ee500b8285e483b4ede5"
+    hash: "f05b2f90ec91e431f1010467b1b63d7ff82e0433"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -44187,34 +44187,34 @@ exports.default = void 0;
 
 var _actionTypes = require("../constants/actionTypes");
 
-var _default = (state = (cov_1zi5gd85zz.b[0][0]++, {}), action) => {
-  cov_1zi5gd85zz.f[0]++;
-  cov_1zi5gd85zz.s[0]++;
+var _default = (state = (cov_gn0x02muz.b[0][0]++, {}), action) => {
+  cov_gn0x02muz.f[0]++;
+  cov_gn0x02muz.s[0]++;
 
   switch (action.type) {
     case _actionTypes.SETTINGS_SAVED:
-      cov_1zi5gd85zz.b[1][0]++;
-      cov_1zi5gd85zz.s[1]++;
+      cov_gn0x02muz.b[1][0]++;
+      cov_gn0x02muz.s[1]++;
       return { ...state,
         inProgress: false,
-        errors: action.error ? (cov_1zi5gd85zz.b[2][0]++, action.payload.errors) : (cov_1zi5gd85zz.b[2][1]++, null)
+        errors: action.error ? (cov_gn0x02muz.b[2][0]++, action.payload.errors) : (cov_gn0x02muz.b[2][1]++, null)
       };
 
     case _actionTypes.SETTINGS_PAGE_UNLOADED:
-      cov_1zi5gd85zz.b[1][1]++;
-      cov_1zi5gd85zz.s[2]++;
+      cov_gn0x02muz.b[1][1]++;
+      cov_gn0x02muz.s[2]++;
       return {};
 
     case _actionTypes.ASYNC_START:
-      cov_1zi5gd85zz.b[1][2]++;
-      cov_1zi5gd85zz.s[3]++;
+      cov_gn0x02muz.b[1][2]++;
+      cov_gn0x02muz.s[3]++;
       return { ...state,
         inProgress: true
       };
 
     default:
-      cov_1zi5gd85zz.b[1][3]++;
-      cov_1zi5gd85zz.s[4]++;
+      cov_gn0x02muz.b[1][3]++;
+      cov_gn0x02muz.s[4]++;
       return state;
   }
 };
@@ -47598,13 +47598,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 },{"./ConnectedRouter":"../node_modules/react-router-redux/es/ConnectedRouter.js","./selectors":"../node_modules/react-router-redux/es/selectors.js","./reducer":"../node_modules/react-router-redux/es/reducer.js","./actions":"../node_modules/react-router-redux/es/actions.js","./middleware":"../node_modules/react-router-redux/es/middleware.js"}],"../src/reducer.js":[function(require,module,exports) {
 "use strict";
 
-var cov_18zmssyxon = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducer.js";
-  var hash = "e7f89f35b5c35432a5b9734b0bf2ceb21d8da874";
+var cov_wxmiytoxg = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducer.js";
+  var hash = "71bb58443af4ff02f00b68eaf10ac1475efd4be9";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/reducer.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/reducer.js",
     statementMap: {},
     fnMap: {},
     branchMap: {},
@@ -47612,7 +47612,7 @@ var cov_18zmssyxon = function () {
     f: {},
     b: {},
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "e7f89f35b5c35432a5b9734b0bf2ceb21d8da874"
+    hash: "71bb58443af4ff02f00b68eaf10ac1475efd4be9"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -47667,13 +47667,13 @@ exports.default = _default;
 var global = arguments[3];
 "use strict";
 
-var cov_2po8mkqnrt = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/store.js";
-  var hash = "4c4113295b4b777df17301919013b60d0e075a2b";
+var cov_sf5v2de20 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/store.js";
+  var hash = "53afe9a37d7680001b4bdfc056967b1f5f26c114";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/store.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/store.js",
     statementMap: {
       "0": {
         start: {
@@ -47803,7 +47803,7 @@ var cov_2po8mkqnrt = function () {
       "0": [0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "4c4113295b4b777df17301919013b60d0e075a2b"
+    hash: "53afe9a37d7680001b4bdfc056967b1f5f26c114"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -47835,15 +47835,15 @@ var _history = require("history");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const history = (cov_2po8mkqnrt.s[0]++, (0, _history.createBrowserHistory)()); // Build the middleware for intercepting and dispatching navigation actions
+const history = (cov_sf5v2de20.s[0]++, (0, _history.createBrowserHistory)()); // Build the middleware for intercepting and dispatching navigation actions
 
 exports.history = history;
-const myRouterMiddleware = (cov_2po8mkqnrt.s[1]++, (0, _reactRouterRedux.routerMiddleware)(history));
-cov_2po8mkqnrt.s[2]++;
+const myRouterMiddleware = (cov_sf5v2de20.s[1]++, (0, _reactRouterRedux.routerMiddleware)(history));
+cov_sf5v2de20.s[2]++;
 
 const getMiddleware = () => {
-  cov_2po8mkqnrt.f[0]++;
-  cov_2po8mkqnrt.s[3]++;
+  cov_sf5v2de20.f[0]++;
+  cov_sf5v2de20.s[3]++;
 
   // we only collect code coverage in non-production environment
   // thus "IF" branch will never get hit
@@ -47852,14 +47852,14 @@ const getMiddleware = () => {
   if ("development" === 'production') {
     return (0, _redux.applyMiddleware)(myRouterMiddleware, _middleware.promiseMiddleware, _middleware.localStorageMiddleware);
   } else {
-    cov_2po8mkqnrt.b[0][0]++;
-    cov_2po8mkqnrt.s[4]++;
+    cov_sf5v2de20.b[0][0]++;
+    cov_sf5v2de20.s[4]++;
     // Enable additional logging in non-production environments.
     return (0, _redux.applyMiddleware)(myRouterMiddleware, _middleware.promiseMiddleware, _middleware.localStorageMiddleware, (0, _reduxLogger.createLogger)());
   }
 };
 
-const store = (cov_2po8mkqnrt.s[5]++, (0, _redux.createStore)(_reducer.default, (0, _developmentOnly.composeWithDevTools)(getMiddleware())));
+const store = (cov_sf5v2de20.s[5]++, (0, _redux.createStore)(_reducer.default, (0, _developmentOnly.composeWithDevTools)(getMiddleware())));
 exports.store = store;
 },{"redux":"../node_modules/redux/es/redux.js","redux-logger":"../node_modules/redux-logger/dist/redux-logger.js","redux-devtools-extension/developmentOnly":"../node_modules/redux-devtools-extension/developmentOnly.js","./middleware":"../src/middleware.js","./reducer":"../src/reducer.js","react-router-redux":"../node_modules/react-router-redux/es/index.js","history":"../node_modules/history/esm/history.js"}],"../node_modules/react-router-dom/es/Router.js":[function(require,module,exports) {
 "use strict";
@@ -48584,13 +48584,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 },{"./BrowserRouter":"../node_modules/react-router-dom/es/BrowserRouter.js","./HashRouter":"../node_modules/react-router-dom/es/HashRouter.js","./Link":"../node_modules/react-router-dom/es/Link.js","./MemoryRouter":"../node_modules/react-router-dom/es/MemoryRouter.js","./NavLink":"../node_modules/react-router-dom/es/NavLink.js","./Prompt":"../node_modules/react-router-dom/es/Prompt.js","./Redirect":"../node_modules/react-router-dom/es/Redirect.js","./Route":"../node_modules/react-router-dom/es/Route.js","./Router":"../node_modules/react-router-dom/es/Router.js","./StaticRouter":"../node_modules/react-router-dom/es/StaticRouter.js","./Switch":"../node_modules/react-router-dom/es/Switch.js","./generatePath":"../node_modules/react-router-dom/es/generatePath.js","./matchPath":"../node_modules/react-router-dom/es/matchPath.js","./withRouter":"../node_modules/react-router-dom/es/withRouter.js"}],"../src/components/Header.js":[function(require,module,exports) {
 "use strict";
 
-var cov_rvt2iwue7 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Header.js";
-  var hash = "a9f6c289ef66cb9f9e3a7516c71ee119e49fd310";
+var cov_21ojimdv7p = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Header.js";
+  var hash = "3508f8afd8ace048a37e4fceef5173abbd05e981";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Header.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Header.js",
     statementMap: {
       "0": {
         start: {
@@ -48846,7 +48846,7 @@ var cov_rvt2iwue7 = function () {
       "1": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "a9f6c289ef66cb9f9e3a7516c71ee119e49fd310"
+    hash: "3508f8afd8ace048a37e4fceef5173abbd05e981"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -48868,15 +48868,15 @@ var _reactRouterDom = require("react-router-dom");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_rvt2iwue7.s[0]++;
+cov_21ojimdv7p.s[0]++;
 
 const LoggedOutView = props => {
-  cov_rvt2iwue7.f[0]++;
-  cov_rvt2iwue7.s[1]++;
+  cov_21ojimdv7p.f[0]++;
+  cov_21ojimdv7p.s[1]++;
 
   if (!props.currentUser) {
-    cov_rvt2iwue7.b[0][0]++;
-    cov_rvt2iwue7.s[2]++;
+    cov_21ojimdv7p.b[0][0]++;
+    cov_21ojimdv7p.s[2]++;
     return _react.default.createElement("ul", {
       className: "nav navbar-nav pull-xs-right"
     }, _react.default.createElement("li", {
@@ -48899,22 +48899,22 @@ const LoggedOutView = props => {
       className: "nav-link"
     }, "Sign up")));
   } else {
-    cov_rvt2iwue7.b[0][1]++;
+    cov_21ojimdv7p.b[0][1]++;
   }
 
-  cov_rvt2iwue7.s[3]++;
+  cov_21ojimdv7p.s[3]++;
   return null;
 };
 
-cov_rvt2iwue7.s[4]++;
+cov_21ojimdv7p.s[4]++;
 
 const LoggedInView = props => {
-  cov_rvt2iwue7.f[1]++;
-  cov_rvt2iwue7.s[5]++;
+  cov_21ojimdv7p.f[1]++;
+  cov_21ojimdv7p.s[5]++;
 
   if (props.currentUser) {
-    cov_rvt2iwue7.b[1][0]++;
-    cov_rvt2iwue7.s[6]++;
+    cov_21ojimdv7p.b[1][0]++;
+    cov_21ojimdv7p.s[6]++;
     return _react.default.createElement("ul", {
       className: "nav navbar-nav pull-xs-right"
     }, _react.default.createElement("li", {
@@ -48950,17 +48950,17 @@ const LoggedInView = props => {
       alt: props.currentUser.username
     }), props.currentUser.username)));
   } else {
-    cov_rvt2iwue7.b[1][1]++;
+    cov_21ojimdv7p.b[1][1]++;
   }
 
-  cov_rvt2iwue7.s[7]++;
+  cov_21ojimdv7p.s[7]++;
   return null;
 };
 
 class Header extends (_react.default.Component) {
   render() {
-    cov_rvt2iwue7.f[2]++;
-    cov_rvt2iwue7.s[8]++;
+    cov_21ojimdv7p.f[2]++;
+    cov_21ojimdv7p.s[8]++;
     return _react.default.createElement("nav", {
       className: "navbar navbar-light"
     }, _react.default.createElement("div", {
@@ -48982,13 +48982,13 @@ exports.default = _default;
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js"}],"../src/components/Article/ArticleActions.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1mp916sds3 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/ArticleActions.js";
-  var hash = "f7190fda14c054b2e3ae37bb825bbcabea75fd44";
+var cov_1uulgmgkf5 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/ArticleActions.js";
+  var hash = "54bcd7308ab12feac0cc36cffcaf1c859bc85431";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/ArticleActions.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/ArticleActions.js",
     statementMap: {
       "0": {
         start: {
@@ -49282,7 +49282,7 @@ var cov_1mp916sds3 = function () {
       "0": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "f7190fda14c054b2e3ae37bb825bbcabea75fd44"
+    hash: "54bcd7308ab12feac0cc36cffcaf1c859bc85431"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -49310,15 +49310,15 @@ var _actionTypes = require("../../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1mp916sds3.s[0]++;
+cov_1uulgmgkf5.s[0]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_1mp916sds3.f[0]++;
-  cov_1mp916sds3.s[1]++;
+  cov_1uulgmgkf5.f[0]++;
+  cov_1uulgmgkf5.s[1]++;
   return {
     onClickDelete: payload => {
-      cov_1mp916sds3.f[1]++;
-      cov_1mp916sds3.s[2]++;
+      cov_1uulgmgkf5.f[1]++;
+      cov_1uulgmgkf5.s[2]++;
       return dispatch({
         type: _actionTypes.DELETE_ARTICLE,
         payload
@@ -49327,24 +49327,24 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-cov_1mp916sds3.s[3]++;
+cov_1uulgmgkf5.s[3]++;
 
 const ArticleActions = props => {
-  cov_1mp916sds3.f[2]++;
-  const article = (cov_1mp916sds3.s[4]++, props.article);
-  cov_1mp916sds3.s[5]++;
+  cov_1uulgmgkf5.f[2]++;
+  const article = (cov_1uulgmgkf5.s[4]++, props.article);
+  cov_1uulgmgkf5.s[5]++;
 
   const del = () => {
-    cov_1mp916sds3.f[3]++;
-    cov_1mp916sds3.s[6]++;
+    cov_1uulgmgkf5.f[3]++;
+    cov_1uulgmgkf5.s[6]++;
     props.onClickDelete(_agent.default.Articles.del(article.slug));
   };
 
-  cov_1mp916sds3.s[7]++;
+  cov_1uulgmgkf5.s[7]++;
 
   if (props.canModify) {
-    cov_1mp916sds3.b[0][0]++;
-    cov_1mp916sds3.s[8]++;
+    cov_1uulgmgkf5.b[0][0]++;
+    cov_1uulgmgkf5.s[8]++;
     return _react.default.createElement("span", null, _react.default.createElement(_reactRouterDom.Link, {
       to: "/editor/".concat(article.slug),
       className: "btn btn-outline-secondary btn-sm",
@@ -49359,16 +49359,16 @@ const ArticleActions = props => {
       className: "ion-trash-a"
     }), " Delete Article"));
   } else {
-    cov_1mp916sds3.b[0][1]++;
+    cov_1uulgmgkf5.b[0][1]++;
   }
 
-  cov_1mp916sds3.s[9]++;
+  cov_1uulgmgkf5.s[9]++;
   return _react.default.createElement("span", null);
 };
 
 var _default = (0, _reactRedux.connect)(() => {
-  cov_1mp916sds3.f[4]++;
-  cov_1mp916sds3.s[10]++;
+  cov_1uulgmgkf5.f[4]++;
+  cov_1uulgmgkf5.s[10]++;
   return {};
 }, mapDispatchToProps)(ArticleActions);
 
@@ -49376,13 +49376,13 @@ exports.default = _default;
 },{"react-router-dom":"../node_modules/react-router-dom/es/index.js","react":"../node_modules/react/index.js","../../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Article/ArticleMeta.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1rr59bbslf = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/ArticleMeta.js";
-  var hash = "240e107a4fdfbd1e0ebcda5c008a389659f18296";
+var cov_21sv2qdecn = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/ArticleMeta.js";
+  var hash = "31f4a80d9d0faf0b212cb41bbc8f4ed0b5ad2a75";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/ArticleMeta.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/ArticleMeta.js",
     statementMap: {
       "0": {
         start: {
@@ -49452,7 +49452,7 @@ var cov_1rr59bbslf = function () {
     },
     b: {},
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "240e107a4fdfbd1e0ebcda5c008a389659f18296"
+    hash: "31f4a80d9d0faf0b212cb41bbc8f4ed0b5ad2a75"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -49476,12 +49476,12 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1rr59bbslf.s[0]++;
+cov_21sv2qdecn.s[0]++;
 
 const ArticleMeta = props => {
-  cov_1rr59bbslf.f[0]++;
-  const article = (cov_1rr59bbslf.s[1]++, props.article);
-  cov_1rr59bbslf.s[2]++;
+  cov_21sv2qdecn.f[0]++;
+  const article = (cov_21sv2qdecn.s[1]++, props.article);
+  cov_21sv2qdecn.s[2]++;
   return _react.default.createElement("div", {
     className: "article-meta"
   }, _react.default.createElement(_reactRouterDom.Link, {
@@ -49507,13 +49507,13 @@ exports.default = _default;
 },{"./ArticleActions":"../src/components/Article/ArticleActions.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","react":"../node_modules/react/index.js"}],"../src/components/Article/CommentInput.js":[function(require,module,exports) {
 "use strict";
 
-var cov_ntd1m08xh = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/CommentInput.js";
-  var hash = "33039eae2011915e12c4a667e2dca848ebb74ca3";
+var cov_19slhw8h7v = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/CommentInput.js";
+  var hash = "8a75a91ffba91a3a87114eda0001258c799623ad";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/CommentInput.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/CommentInput.js",
     statementMap: {
       "0": {
         start: {
@@ -49854,7 +49854,7 @@ var cov_ntd1m08xh = function () {
     },
     b: {},
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "33039eae2011915e12c4a667e2dca848ebb74ca3"
+    hash: "8a75a91ffba91a3a87114eda0001258c799623ad"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -49880,15 +49880,15 @@ var _actionTypes = require("../../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_ntd1m08xh.s[0]++;
+cov_19slhw8h7v.s[0]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_ntd1m08xh.f[0]++;
-  cov_ntd1m08xh.s[1]++;
+  cov_19slhw8h7v.f[0]++;
+  cov_19slhw8h7v.s[1]++;
   return {
     onSubmit: payload => {
-      cov_ntd1m08xh.f[1]++;
-      cov_ntd1m08xh.s[2]++;
+      cov_19slhw8h7v.f[1]++;
+      cov_19slhw8h7v.s[2]++;
       return dispatch({
         type: _actionTypes.ADD_COMMENT,
         payload
@@ -49899,44 +49899,44 @@ const mapDispatchToProps = dispatch => {
 
 class CommentInput extends (_react.default.Component) {
   constructor() {
-    cov_ntd1m08xh.f[2]++;
-    cov_ntd1m08xh.s[3]++;
+    cov_19slhw8h7v.f[2]++;
+    cov_19slhw8h7v.s[3]++;
     super();
-    cov_ntd1m08xh.s[4]++;
+    cov_19slhw8h7v.s[4]++;
     this.state = {
       body: ''
     };
-    cov_ntd1m08xh.s[5]++;
+    cov_19slhw8h7v.s[5]++;
 
     this.setBody = ev => {
-      cov_ntd1m08xh.f[3]++;
-      cov_ntd1m08xh.s[6]++;
+      cov_19slhw8h7v.f[3]++;
+      cov_19slhw8h7v.s[6]++;
       this.setState({
         body: ev.target.value
       });
     };
 
-    cov_ntd1m08xh.s[7]++;
+    cov_19slhw8h7v.s[7]++;
 
     this.createComment = ev => {
-      cov_ntd1m08xh.f[4]++;
-      cov_ntd1m08xh.s[8]++;
+      cov_19slhw8h7v.f[4]++;
+      cov_19slhw8h7v.s[8]++;
       ev.preventDefault();
-      const payload = (cov_ntd1m08xh.s[9]++, _agent.default.Comments.create(this.props.slug, {
+      const payload = (cov_19slhw8h7v.s[9]++, _agent.default.Comments.create(this.props.slug, {
         body: this.state.body
       }));
-      cov_ntd1m08xh.s[10]++;
+      cov_19slhw8h7v.s[10]++;
       this.setState({
         body: ''
       });
-      cov_ntd1m08xh.s[11]++;
+      cov_19slhw8h7v.s[11]++;
       this.props.onSubmit(payload);
     };
   }
 
   render() {
-    cov_ntd1m08xh.f[5]++;
-    cov_ntd1m08xh.s[12]++;
+    cov_19slhw8h7v.f[5]++;
+    cov_19slhw8h7v.s[12]++;
     return _react.default.createElement("form", {
       className: "card comment-form",
       onSubmit: this.createComment
@@ -49965,8 +49965,8 @@ class CommentInput extends (_react.default.Component) {
 }
 
 var _default = (0, _reactRedux.connect)(() => {
-  cov_ntd1m08xh.f[6]++;
-  cov_ntd1m08xh.s[13]++;
+  cov_19slhw8h7v.f[6]++;
+  cov_19slhw8h7v.s[13]++;
   return {};
 }, mapDispatchToProps)(CommentInput);
 
@@ -49974,13 +49974,13 @@ exports.default = _default;
 },{"react":"../node_modules/react/index.js","../../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Article/DeleteButton.js":[function(require,module,exports) {
 "use strict";
 
-var cov_fqp1bn6js = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/DeleteButton.js";
-  var hash = "8fc49595a4c2359ba3e12bc002a7f7a14d6ffde5";
+var cov_2n8bipukvq = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/DeleteButton.js";
+  var hash = "ffd7d36df2301fe682be3db28c459991a1cf5346";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/DeleteButton.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/DeleteButton.js",
     statementMap: {
       "0": {
         start: {
@@ -50274,7 +50274,7 @@ var cov_fqp1bn6js = function () {
       "0": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "8fc49595a4c2359ba3e12bc002a7f7a14d6ffde5"
+    hash: "ffd7d36df2301fe682be3db28c459991a1cf5346"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -50300,15 +50300,15 @@ var _actionTypes = require("../../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_fqp1bn6js.s[0]++;
+cov_2n8bipukvq.s[0]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_fqp1bn6js.f[0]++;
-  cov_fqp1bn6js.s[1]++;
+  cov_2n8bipukvq.f[0]++;
+  cov_2n8bipukvq.s[1]++;
   return {
     onClick: (payload, commentId) => {
-      cov_fqp1bn6js.f[1]++;
-      cov_fqp1bn6js.s[2]++;
+      cov_2n8bipukvq.f[1]++;
+      cov_2n8bipukvq.s[2]++;
       return dispatch({
         type: _actionTypes.DELETE_COMMENT,
         payload,
@@ -50318,24 +50318,24 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-cov_fqp1bn6js.s[3]++;
+cov_2n8bipukvq.s[3]++;
 
 const DeleteButton = props => {
-  cov_fqp1bn6js.f[2]++;
-  cov_fqp1bn6js.s[4]++;
+  cov_2n8bipukvq.f[2]++;
+  cov_2n8bipukvq.s[4]++;
 
   const del = () => {
-    cov_fqp1bn6js.f[3]++;
-    const payload = (cov_fqp1bn6js.s[5]++, _agent.default.Comments.delete(props.slug, props.commentId));
-    cov_fqp1bn6js.s[6]++;
+    cov_2n8bipukvq.f[3]++;
+    const payload = (cov_2n8bipukvq.s[5]++, _agent.default.Comments.delete(props.slug, props.commentId));
+    cov_2n8bipukvq.s[6]++;
     props.onClick(payload, props.commentId);
   };
 
-  cov_fqp1bn6js.s[7]++;
+  cov_2n8bipukvq.s[7]++;
 
   if (props.show) {
-    cov_fqp1bn6js.b[0][0]++;
-    cov_fqp1bn6js.s[8]++;
+    cov_2n8bipukvq.b[0][0]++;
+    cov_2n8bipukvq.s[8]++;
     return _react.default.createElement("span", {
       className: "mod-options",
       "data-cy": "delete-button"
@@ -50344,16 +50344,16 @@ const DeleteButton = props => {
       onClick: del
     }));
   } else {
-    cov_fqp1bn6js.b[0][1]++;
+    cov_2n8bipukvq.b[0][1]++;
   }
 
-  cov_fqp1bn6js.s[9]++;
+  cov_2n8bipukvq.s[9]++;
   return null;
 };
 
 var _default = (0, _reactRedux.connect)(() => {
-  cov_fqp1bn6js.f[4]++;
-  cov_fqp1bn6js.s[10]++;
+  cov_2n8bipukvq.f[4]++;
+  cov_2n8bipukvq.s[10]++;
   return {};
 }, mapDispatchToProps)(DeleteButton);
 
@@ -50361,13 +50361,13 @@ exports.default = _default;
 },{"react":"../node_modules/react/index.js","../../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Article/Comment.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1t6pg2tr2h = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/Comment.js";
-  var hash = "6bfd224aed69655fe63ae4391f4888bad4e12b9c";
+var cov_1zsfairjcf = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/Comment.js";
+  var hash = "5f84217f3f7eb620e9527f760cec2119b5d4b630";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/Comment.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/Comment.js",
     statementMap: {
       "0": {
         start: {
@@ -50484,7 +50484,7 @@ var cov_1t6pg2tr2h = function () {
       "0": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "6bfd224aed69655fe63ae4391f4888bad4e12b9c"
+    hash: "5f84217f3f7eb620e9527f760cec2119b5d4b630"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -50508,13 +50508,13 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1t6pg2tr2h.s[0]++;
+cov_1zsfairjcf.s[0]++;
 
 const Comment = props => {
-  cov_1t6pg2tr2h.f[0]++;
-  const comment = (cov_1t6pg2tr2h.s[1]++, props.comment);
-  const show = (cov_1t6pg2tr2h.s[2]++, (cov_1t6pg2tr2h.b[0][0]++, props.currentUser) && (cov_1t6pg2tr2h.b[0][1]++, props.currentUser.username === comment.author.username));
-  cov_1t6pg2tr2h.s[3]++;
+  cov_1zsfairjcf.f[0]++;
+  const comment = (cov_1zsfairjcf.s[1]++, props.comment);
+  const show = (cov_1zsfairjcf.s[2]++, (cov_1zsfairjcf.b[0][0]++, props.currentUser) && (cov_1zsfairjcf.b[0][1]++, props.currentUser.username === comment.author.username));
+  cov_1zsfairjcf.s[3]++;
   return _react.default.createElement("div", {
     "data-cy": "comment",
     className: "card"
@@ -50548,13 +50548,13 @@ exports.default = _default;
 },{"./DeleteButton":"../src/components/Article/DeleteButton.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","react":"../node_modules/react/index.js"}],"../src/components/Article/CommentList.js":[function(require,module,exports) {
 "use strict";
 
-var cov_aystsikzl = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/CommentList.js";
-  var hash = "7c97f0ad81396090e0a331744789a0a7e7b8c8ef";
+var cov_2li2204pkk = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/CommentList.js";
+  var hash = "00d061a607a6110bfe888986034e3556e5b0787f";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/CommentList.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/CommentList.js",
     statementMap: {
       "0": {
         start: {
@@ -50649,7 +50649,7 @@ var cov_aystsikzl = function () {
     },
     b: {},
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "7c97f0ad81396090e0a331744789a0a7e7b8c8ef"
+    hash: "00d061a607a6110bfe888986034e3556e5b0787f"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -50671,14 +50671,14 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_aystsikzl.s[0]++;
+cov_2li2204pkk.s[0]++;
 
 const CommentList = props => {
-  cov_aystsikzl.f[0]++;
-  cov_aystsikzl.s[1]++;
+  cov_2li2204pkk.f[0]++;
+  cov_2li2204pkk.s[1]++;
   return _react.default.createElement("div", null, props.comments.map(comment => {
-    cov_aystsikzl.f[1]++;
-    cov_aystsikzl.s[2]++;
+    cov_2li2204pkk.f[1]++;
+    cov_2li2204pkk.s[2]++;
     return _react.default.createElement(_Comment.default, {
       comment: comment,
       currentUser: props.currentUser,
@@ -50693,13 +50693,13 @@ exports.default = _default;
 },{"./Comment":"../src/components/Article/Comment.js","react":"../node_modules/react/index.js"}],"../src/components/Article/CommentContainer.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1t4k4a9d8s = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/CommentContainer.js";
-  var hash = "1383a832561fe5046439d3193dc686c97ac80ede";
+var cov_1hz7d5d14m = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/CommentContainer.js";
+  var hash = "a2801b8a9109df9b62dcb1eab8fbb9c9424bca1d";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/CommentContainer.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/CommentContainer.js",
     statementMap: {
       "0": {
         start: {
@@ -50816,7 +50816,7 @@ var cov_1t4k4a9d8s = function () {
       "0": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "1383a832561fe5046439d3193dc686c97ac80ede"
+    hash: "a2801b8a9109df9b62dcb1eab8fbb9c9424bca1d"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -50842,15 +50842,15 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1t4k4a9d8s.s[0]++;
+cov_1hz7d5d14m.s[0]++;
 
 const CommentContainer = props => {
-  cov_1t4k4a9d8s.f[0]++;
-  cov_1t4k4a9d8s.s[1]++;
+  cov_1hz7d5d14m.f[0]++;
+  cov_1hz7d5d14m.s[1]++;
 
   if (props.currentUser) {
-    cov_1t4k4a9d8s.b[0][0]++;
-    cov_1t4k4a9d8s.s[2]++;
+    cov_1hz7d5d14m.b[0][0]++;
+    cov_1hz7d5d14m.s[2]++;
     return _react.default.createElement("div", {
       className: "col-xs-12 col-md-8 offset-md-2"
     }, _react.default.createElement("div", null, _react.default.createElement("list-errors", {
@@ -50864,8 +50864,8 @@ const CommentContainer = props => {
       currentUser: props.currentUser
     }));
   } else {
-    cov_1t4k4a9d8s.b[0][1]++;
-    cov_1t4k4a9d8s.s[3]++;
+    cov_1hz7d5d14m.b[0][1]++;
+    cov_1hz7d5d14m.s[3]++;
     return _react.default.createElement("div", {
       className: "col-xs-12 col-md-8 offset-md-2"
     }, _react.default.createElement("p", null, _react.default.createElement(_reactRouterDom.Link, {
@@ -52631,13 +52631,13 @@ module.exports = marked;
 },{"./Lexer.js":"../node_modules/marked/src/Lexer.js","./Parser.js":"../node_modules/marked/src/Parser.js","./Renderer.js":"../node_modules/marked/src/Renderer.js","./TextRenderer.js":"../node_modules/marked/src/TextRenderer.js","./InlineLexer.js":"../node_modules/marked/src/InlineLexer.js","./Slugger.js":"../node_modules/marked/src/Slugger.js","./helpers.js":"../node_modules/marked/src/helpers.js","./defaults.js":"../node_modules/marked/src/defaults.js"}],"../src/components/Article/index.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1a46sx77pj = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/index.js";
-  var hash = "f4dc3a819594a029ce78e48651e6e12bff827c8a";
+var cov_tpb2rrgwu = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/index.js";
+  var hash = "af13f3e802370bfea511f93fd29279d75e1f9028";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Article/index.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Article/index.js",
     statementMap: {
       "0": {
         start: {
@@ -53107,7 +53107,7 @@ var cov_1a46sx77pj = function () {
       "2": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "f4dc3a819594a029ce78e48651e6e12bff827c8a"
+    hash: "af13f3e802370bfea511f93fd29279d75e1f9028"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -53139,33 +53139,33 @@ var _actionTypes = require("../../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1a46sx77pj.s[0]++;
+cov_tpb2rrgwu.s[0]++;
 
 const mapStateToProps = state => {
-  cov_1a46sx77pj.f[0]++;
-  cov_1a46sx77pj.s[1]++;
+  cov_tpb2rrgwu.f[0]++;
+  cov_tpb2rrgwu.s[1]++;
   return { ...state.article,
     currentUser: state.common.currentUser
   };
 };
 
-cov_1a46sx77pj.s[2]++;
+cov_tpb2rrgwu.s[2]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_1a46sx77pj.f[1]++;
-  cov_1a46sx77pj.s[3]++;
+  cov_tpb2rrgwu.f[1]++;
+  cov_tpb2rrgwu.s[3]++;
   return {
     onLoad: payload => {
-      cov_1a46sx77pj.f[2]++;
-      cov_1a46sx77pj.s[4]++;
+      cov_tpb2rrgwu.f[2]++;
+      cov_tpb2rrgwu.s[4]++;
       return dispatch({
         type: _actionTypes.ARTICLE_PAGE_LOADED,
         payload
       });
     },
     onUnload: () => {
-      cov_1a46sx77pj.f[3]++;
-      cov_1a46sx77pj.s[5]++;
+      cov_tpb2rrgwu.f[3]++;
+      cov_tpb2rrgwu.s[5]++;
       return dispatch({
         type: _actionTypes.ARTICLE_PAGE_UNLOADED
       });
@@ -53175,36 +53175,36 @@ const mapDispatchToProps = dispatch => {
 
 class Article extends (_react.default.Component) {
   componentWillMount() {
-    cov_1a46sx77pj.f[4]++;
-    cov_1a46sx77pj.s[6]++;
+    cov_tpb2rrgwu.f[4]++;
+    cov_tpb2rrgwu.s[6]++;
     this.props.onLoad(Promise.all([_agent.default.Articles.get(this.props.match.params.id), _agent.default.Comments.forArticle(this.props.match.params.id)]));
   }
 
   componentWillUnmount() {
-    cov_1a46sx77pj.f[5]++;
-    cov_1a46sx77pj.s[7]++;
+    cov_tpb2rrgwu.f[5]++;
+    cov_tpb2rrgwu.s[7]++;
     this.props.onUnload();
   }
 
   render() {
-    cov_1a46sx77pj.f[6]++;
-    cov_1a46sx77pj.s[8]++;
+    cov_tpb2rrgwu.f[6]++;
+    cov_tpb2rrgwu.s[8]++;
 
     if (!this.props.article) {
-      cov_1a46sx77pj.b[0][0]++;
-      cov_1a46sx77pj.s[9]++;
+      cov_tpb2rrgwu.b[0][0]++;
+      cov_tpb2rrgwu.s[9]++;
       return null;
     } else {
-      cov_1a46sx77pj.b[0][1]++;
+      cov_tpb2rrgwu.b[0][1]++;
     }
 
-    const markup = (cov_1a46sx77pj.s[10]++, {
+    const markup = (cov_tpb2rrgwu.s[10]++, {
       __html: (0, _marked.default)(this.props.article.body, {
         sanitize: true
       })
     });
-    const canModify = (cov_1a46sx77pj.s[11]++, (cov_1a46sx77pj.b[1][0]++, this.props.currentUser) && (cov_1a46sx77pj.b[1][1]++, this.props.currentUser.username === this.props.article.author.username));
-    cov_1a46sx77pj.s[12]++;
+    const canModify = (cov_tpb2rrgwu.s[11]++, (cov_tpb2rrgwu.b[1][0]++, this.props.currentUser) && (cov_tpb2rrgwu.b[1][1]++, this.props.currentUser.username === this.props.article.author.username));
+    cov_tpb2rrgwu.s[12]++;
     return _react.default.createElement("div", {
       className: "article-page"
     }, _react.default.createElement("div", {
@@ -53225,8 +53225,8 @@ class Article extends (_react.default.Component) {
     }), _react.default.createElement("ul", {
       className: "tag-list"
     }, this.props.article.tagList.map(tag => {
-      cov_1a46sx77pj.f[7]++;
-      cov_1a46sx77pj.s[13]++;
+      cov_tpb2rrgwu.f[7]++;
+      cov_tpb2rrgwu.s[13]++;
       return _react.default.createElement("li", {
         className: "tag-default tag-pill tag-outline",
         key: tag
@@ -53236,7 +53236,7 @@ class Article extends (_react.default.Component) {
     }), _react.default.createElement("div", {
       className: "row"
     }, _react.default.createElement(_CommentContainer.default, {
-      comments: (cov_1a46sx77pj.b[2][0]++, this.props.comments) || (cov_1a46sx77pj.b[2][1]++, []),
+      comments: (cov_tpb2rrgwu.b[2][0]++, this.props.comments) || (cov_tpb2rrgwu.b[2][1]++, []),
       errors: this.props.commentErrors,
       slug: this.props.match.params.id,
       currentUser: this.props.currentUser
@@ -53251,13 +53251,13 @@ exports.default = _default;
 },{"./ArticleMeta":"../src/components/Article/ArticleMeta.js","./CommentContainer":"../src/components/Article/CommentContainer.js","react":"../node_modules/react/index.js","../../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","marked":"../node_modules/marked/src/marked.js","../../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/ListErrors.js":[function(require,module,exports) {
 "use strict";
 
-var cov_2k1rog5t9q = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ListErrors.js";
-  var hash = "88ba30528863a05f2854323cf5ff0423b3ffb16e";
+var cov_2lnqqsmox7 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ListErrors.js";
+  var hash = "494bc129905e359709af9c27d8c6e7498506b319";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ListErrors.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ListErrors.js",
     statementMap: {
       "0": {
         start: {
@@ -53410,7 +53410,7 @@ var cov_2k1rog5t9q = function () {
       "0": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "88ba30528863a05f2854323cf5ff0423b3ffb16e"
+    hash: "494bc129905e359709af9c27d8c6e7498506b319"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -53432,25 +53432,25 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 class ListErrors extends (_react.default.Component) {
   render() {
-    cov_2k1rog5t9q.f[0]++;
-    const errors = (cov_2k1rog5t9q.s[0]++, this.props.errors);
-    cov_2k1rog5t9q.s[1]++;
+    cov_2lnqqsmox7.f[0]++;
+    const errors = (cov_2lnqqsmox7.s[0]++, this.props.errors);
+    cov_2lnqqsmox7.s[1]++;
 
     if (errors) {
-      cov_2k1rog5t9q.b[0][0]++;
-      cov_2k1rog5t9q.s[2]++;
+      cov_2lnqqsmox7.b[0][0]++;
+      cov_2lnqqsmox7.s[2]++;
       return _react.default.createElement("ul", {
         className: "error-messages"
       }, Object.keys(errors).map(key => {
-        cov_2k1rog5t9q.f[1]++;
-        cov_2k1rog5t9q.s[3]++;
+        cov_2lnqqsmox7.f[1]++;
+        cov_2lnqqsmox7.s[3]++;
         return _react.default.createElement("li", {
           key: key
         }, key, " ", errors[key]);
       }));
     } else {
-      cov_2k1rog5t9q.b[0][1]++;
-      cov_2k1rog5t9q.s[4]++;
+      cov_2lnqqsmox7.b[0][1]++;
+      cov_2lnqqsmox7.s[4]++;
       return null;
     }
   }
@@ -53462,13 +53462,13 @@ exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"../src/components/Editor.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1ztaycekxb = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Editor.js";
-  var hash = "ed394c8fd0ea3f5b045f359f16638753385a374d";
+var cov_hhoerwviq = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Editor.js";
+  var hash = "c6fe7f4c8fa1d32073174d9c9f30a5d3ffa8ac95";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Editor.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Editor.js",
     statementMap: {
       "0": {
         start: {
@@ -54648,7 +54648,7 @@ var cov_1ztaycekxb = function () {
       "5": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "ed394c8fd0ea3f5b045f359f16638753385a374d"
+    hash: "c6fe7f4c8fa1d32073174d9c9f30a5d3ffa8ac95"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -54676,62 +54676,62 @@ var _actionTypes = require("../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1ztaycekxb.s[0]++;
+cov_hhoerwviq.s[0]++;
 
 const mapStateToProps = state => {
-  cov_1ztaycekxb.f[0]++;
-  cov_1ztaycekxb.s[1]++;
+  cov_hhoerwviq.f[0]++;
+  cov_hhoerwviq.s[1]++;
   return { ...state.editor
   };
 };
 
-cov_1ztaycekxb.s[2]++;
+cov_hhoerwviq.s[2]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_1ztaycekxb.f[1]++;
-  cov_1ztaycekxb.s[3]++;
+  cov_hhoerwviq.f[1]++;
+  cov_hhoerwviq.s[3]++;
   return {
     onAddTag: () => {
-      cov_1ztaycekxb.f[2]++;
-      cov_1ztaycekxb.s[4]++;
+      cov_hhoerwviq.f[2]++;
+      cov_hhoerwviq.s[4]++;
       return dispatch({
         type: _actionTypes.ADD_TAG
       });
     },
     onLoad: payload => {
-      cov_1ztaycekxb.f[3]++;
-      cov_1ztaycekxb.s[5]++;
+      cov_hhoerwviq.f[3]++;
+      cov_hhoerwviq.s[5]++;
       return dispatch({
         type: _actionTypes.EDITOR_PAGE_LOADED,
         payload
       });
     },
     onRemoveTag: tag => {
-      cov_1ztaycekxb.f[4]++;
-      cov_1ztaycekxb.s[6]++;
+      cov_hhoerwviq.f[4]++;
+      cov_hhoerwviq.s[6]++;
       return dispatch({
         type: _actionTypes.REMOVE_TAG,
         tag
       });
     },
     onSubmit: payload => {
-      cov_1ztaycekxb.f[5]++;
-      cov_1ztaycekxb.s[7]++;
+      cov_hhoerwviq.f[5]++;
+      cov_hhoerwviq.s[7]++;
       return dispatch({
         type: _actionTypes.ARTICLE_SUBMITTED,
         payload
       });
     },
     onUnload: payload => {
-      cov_1ztaycekxb.f[6]++;
-      cov_1ztaycekxb.s[8]++;
+      cov_hhoerwviq.f[6]++;
+      cov_hhoerwviq.s[8]++;
       return dispatch({
         type: _actionTypes.EDITOR_PAGE_UNLOADED
       });
     },
     onUpdateField: (key, value) => {
-      cov_1ztaycekxb.f[7]++;
-      cov_1ztaycekxb.s[9]++;
+      cov_hhoerwviq.f[7]++;
+      cov_hhoerwviq.s[9]++;
       return dispatch({
         type: _actionTypes.UPDATE_FIELD_EDITOR,
         key,
@@ -54743,129 +54743,129 @@ const mapDispatchToProps = dispatch => {
 
 class Editor extends (_react.default.Component) {
   constructor() {
-    cov_1ztaycekxb.f[8]++;
-    cov_1ztaycekxb.s[10]++;
+    cov_hhoerwviq.f[8]++;
+    cov_hhoerwviq.s[10]++;
     super();
-    cov_1ztaycekxb.s[11]++;
+    cov_hhoerwviq.s[11]++;
 
     const updateFieldEvent = key => {
-      cov_1ztaycekxb.f[9]++;
-      cov_1ztaycekxb.s[12]++;
+      cov_hhoerwviq.f[9]++;
+      cov_hhoerwviq.s[12]++;
       return ev => {
-        cov_1ztaycekxb.f[10]++;
-        cov_1ztaycekxb.s[13]++;
+        cov_hhoerwviq.f[10]++;
+        cov_hhoerwviq.s[13]++;
         return this.props.onUpdateField(key, ev.target.value);
       };
     };
 
-    cov_1ztaycekxb.s[14]++;
+    cov_hhoerwviq.s[14]++;
     this.changeTitle = updateFieldEvent('title');
-    cov_1ztaycekxb.s[15]++;
+    cov_hhoerwviq.s[15]++;
     this.changeDescription = updateFieldEvent('description');
-    cov_1ztaycekxb.s[16]++;
+    cov_hhoerwviq.s[16]++;
     this.changeBody = updateFieldEvent('body');
-    cov_1ztaycekxb.s[17]++;
+    cov_hhoerwviq.s[17]++;
     this.changeTagInput = updateFieldEvent('tagInput');
-    cov_1ztaycekxb.s[18]++;
+    cov_hhoerwviq.s[18]++;
 
     this.watchForEnter = ev => {
-      cov_1ztaycekxb.f[11]++;
-      cov_1ztaycekxb.s[19]++;
+      cov_hhoerwviq.f[11]++;
+      cov_hhoerwviq.s[19]++;
 
       if (ev.keyCode === 13) {
-        cov_1ztaycekxb.b[0][0]++;
-        cov_1ztaycekxb.s[20]++;
+        cov_hhoerwviq.b[0][0]++;
+        cov_hhoerwviq.s[20]++;
         ev.preventDefault();
-        cov_1ztaycekxb.s[21]++;
+        cov_hhoerwviq.s[21]++;
         this.props.onAddTag();
       } else {
-        cov_1ztaycekxb.b[0][1]++;
+        cov_hhoerwviq.b[0][1]++;
       }
     };
 
-    cov_1ztaycekxb.s[22]++;
+    cov_hhoerwviq.s[22]++;
 
     this.removeTagHandler = tag => {
-      cov_1ztaycekxb.f[12]++;
-      cov_1ztaycekxb.s[23]++;
+      cov_hhoerwviq.f[12]++;
+      cov_hhoerwviq.s[23]++;
       return () => {
-        cov_1ztaycekxb.f[13]++;
-        cov_1ztaycekxb.s[24]++;
+        cov_hhoerwviq.f[13]++;
+        cov_hhoerwviq.s[24]++;
         this.props.onRemoveTag(tag);
       };
     };
 
-    cov_1ztaycekxb.s[25]++;
+    cov_hhoerwviq.s[25]++;
 
     this.submitForm = ev => {
-      cov_1ztaycekxb.f[14]++;
-      cov_1ztaycekxb.s[26]++;
+      cov_hhoerwviq.f[14]++;
+      cov_hhoerwviq.s[26]++;
       ev.preventDefault();
-      const article = (cov_1ztaycekxb.s[27]++, {
+      const article = (cov_hhoerwviq.s[27]++, {
         title: this.props.title,
         description: this.props.description,
         body: this.props.body,
         tagList: this.props.tagList
       });
-      const slug = (cov_1ztaycekxb.s[28]++, {
+      const slug = (cov_hhoerwviq.s[28]++, {
         slug: this.props.articleSlug
       });
-      const promise = (cov_1ztaycekxb.s[29]++, this.props.articleSlug ? (cov_1ztaycekxb.b[1][0]++, _agent.default.Articles.update(Object.assign(article, slug))) : (cov_1ztaycekxb.b[1][1]++, _agent.default.Articles.create(article)));
-      cov_1ztaycekxb.s[30]++;
+      const promise = (cov_hhoerwviq.s[29]++, this.props.articleSlug ? (cov_hhoerwviq.b[1][0]++, _agent.default.Articles.update(Object.assign(article, slug))) : (cov_hhoerwviq.b[1][1]++, _agent.default.Articles.create(article)));
+      cov_hhoerwviq.s[30]++;
       this.props.onSubmit(promise);
     };
   }
 
   componentWillReceiveProps(nextProps) {
-    cov_1ztaycekxb.f[15]++;
-    cov_1ztaycekxb.s[31]++;
+    cov_hhoerwviq.f[15]++;
+    cov_hhoerwviq.s[31]++;
 
     if (this.props.match.params.slug !== nextProps.match.params.slug) {
-      cov_1ztaycekxb.b[2][0]++;
-      cov_1ztaycekxb.s[32]++;
+      cov_hhoerwviq.b[2][0]++;
+      cov_hhoerwviq.s[32]++;
 
       if (nextProps.match.params.slug) {
-        cov_1ztaycekxb.b[3][0]++;
-        cov_1ztaycekxb.s[33]++;
+        cov_hhoerwviq.b[3][0]++;
+        cov_hhoerwviq.s[33]++;
         this.props.onUnload();
-        cov_1ztaycekxb.s[34]++;
+        cov_hhoerwviq.s[34]++;
         return this.props.onLoad(_agent.default.Articles.get(this.props.match.params.slug));
       } else {
-        cov_1ztaycekxb.b[3][1]++;
+        cov_hhoerwviq.b[3][1]++;
       }
 
-      cov_1ztaycekxb.s[35]++;
+      cov_hhoerwviq.s[35]++;
       this.props.onLoad(null);
     } else {
-      cov_1ztaycekxb.b[2][1]++;
+      cov_hhoerwviq.b[2][1]++;
     }
   }
 
   componentWillMount() {
-    cov_1ztaycekxb.f[16]++;
-    cov_1ztaycekxb.s[36]++;
+    cov_hhoerwviq.f[16]++;
+    cov_hhoerwviq.s[36]++;
 
     if (this.props.match.params.slug) {
-      cov_1ztaycekxb.b[4][0]++;
-      cov_1ztaycekxb.s[37]++;
+      cov_hhoerwviq.b[4][0]++;
+      cov_hhoerwviq.s[37]++;
       return this.props.onLoad(_agent.default.Articles.get(this.props.match.params.slug));
     } else {
-      cov_1ztaycekxb.b[4][1]++;
+      cov_hhoerwviq.b[4][1]++;
     }
 
-    cov_1ztaycekxb.s[38]++;
+    cov_hhoerwviq.s[38]++;
     this.props.onLoad(null);
   }
 
   componentWillUnmount() {
-    cov_1ztaycekxb.f[17]++;
-    cov_1ztaycekxb.s[39]++;
+    cov_hhoerwviq.f[17]++;
+    cov_hhoerwviq.s[39]++;
     this.props.onUnload();
   }
 
   render() {
-    cov_1ztaycekxb.f[18]++;
-    cov_1ztaycekxb.s[40]++;
+    cov_hhoerwviq.f[18]++;
+    cov_hhoerwviq.s[40]++;
     return _react.default.createElement("div", {
       className: "editor-page"
     }, _react.default.createElement("div", {
@@ -54915,9 +54915,9 @@ class Editor extends (_react.default.Component) {
       onKeyUp: this.watchForEnter
     }), _react.default.createElement("div", {
       className: "tag-list"
-    }, ((cov_1ztaycekxb.b[5][0]++, this.props.tagList) || (cov_1ztaycekxb.b[5][1]++, [])).map(tag => {
-      cov_1ztaycekxb.f[19]++;
-      cov_1ztaycekxb.s[41]++;
+    }, ((cov_hhoerwviq.b[5][0]++, this.props.tagList) || (cov_hhoerwviq.b[5][1]++, [])).map(tag => {
+      cov_hhoerwviq.f[19]++;
+      cov_hhoerwviq.s[41]++;
       return _react.default.createElement("span", {
         className: "tag-default tag-pill",
         key: tag
@@ -54943,13 +54943,13 @@ exports.default = _default;
 },{"./ListErrors":"../src/components/ListErrors.js","react":"../node_modules/react/index.js","../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Home/Banner.js":[function(require,module,exports) {
 "use strict";
 
-var cov_grbl22jkt = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Home/Banner.js";
-  var hash = "c9ff96ac5c05d25bf4ed04918f4f667bafeb3c72";
+var cov_1rwzayn65 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Home/Banner.js";
+  var hash = "5f9f638711c1a7a2dba89465e4ad07d763cc013d";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Home/Banner.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Home/Banner.js",
     statementMap: {
       "0": {
         start: {
@@ -55066,7 +55066,7 @@ var cov_grbl22jkt = function () {
       "0": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "c9ff96ac5c05d25bf4ed04918f4f667bafeb3c72"
+    hash: "5f9f638711c1a7a2dba89465e4ad07d763cc013d"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -55086,24 +55086,24 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_grbl22jkt.s[0]++;
+cov_1rwzayn65.s[0]++;
 
 const Banner = ({
   appName,
   token
 }) => {
-  cov_grbl22jkt.f[0]++;
-  cov_grbl22jkt.s[1]++;
+  cov_1rwzayn65.f[0]++;
+  cov_1rwzayn65.s[1]++;
 
   if (token) {
-    cov_grbl22jkt.b[0][0]++;
-    cov_grbl22jkt.s[2]++;
+    cov_1rwzayn65.b[0][0]++;
+    cov_1rwzayn65.s[2]++;
     return null;
   } else {
-    cov_grbl22jkt.b[0][1]++;
+    cov_1rwzayn65.b[0][1]++;
   }
 
-  cov_grbl22jkt.s[3]++;
+  cov_1rwzayn65.s[3]++;
   return _react.default.createElement("div", {
     className: "banner"
   }, _react.default.createElement("div", {
@@ -55118,13 +55118,13 @@ exports.default = _default;
 },{"react":"../node_modules/react/index.js"}],"../src/components/ArticlePreview.js":[function(require,module,exports) {
 "use strict";
 
-var cov_kp221l14h = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ArticlePreview.js";
-  var hash = "6b3676153f6f0a5615aef9f107ebd2d49c11588f";
+var cov_2qlbl0k0an = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ArticlePreview.js";
+  var hash = "f98b0fdb9eaec9bae6cbcbc5c6af2d27d4ac4125";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ArticlePreview.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ArticlePreview.js",
     statementMap: {
       "0": {
         start: {
@@ -55568,7 +55568,7 @@ var cov_kp221l14h = function () {
       "1": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "6b3676153f6f0a5615aef9f107ebd2d49c11588f"
+    hash: "f98b0fdb9eaec9bae6cbcbc5c6af2d27d4ac4125"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -55596,25 +55596,25 @@ var _actionTypes = require("../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const FAVORITED_CLASS = (cov_kp221l14h.s[0]++, 'btn btn-sm btn-primary');
-const NOT_FAVORITED_CLASS = (cov_kp221l14h.s[1]++, 'btn btn-sm btn-outline-primary');
-cov_kp221l14h.s[2]++;
+const FAVORITED_CLASS = (cov_2qlbl0k0an.s[0]++, 'btn btn-sm btn-primary');
+const NOT_FAVORITED_CLASS = (cov_2qlbl0k0an.s[1]++, 'btn btn-sm btn-outline-primary');
+cov_2qlbl0k0an.s[2]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_kp221l14h.f[0]++;
-  cov_kp221l14h.s[3]++;
+  cov_2qlbl0k0an.f[0]++;
+  cov_2qlbl0k0an.s[3]++;
   return {
     favorite: slug => {
-      cov_kp221l14h.f[1]++;
-      cov_kp221l14h.s[4]++;
+      cov_2qlbl0k0an.f[1]++;
+      cov_2qlbl0k0an.s[4]++;
       return dispatch({
         type: _actionTypes.ARTICLE_FAVORITED,
         payload: _agent.default.Articles.favorite(slug)
       });
     },
     unfavorite: slug => {
-      cov_kp221l14h.f[2]++;
-      cov_kp221l14h.s[5]++;
+      cov_2qlbl0k0an.f[2]++;
+      cov_2qlbl0k0an.s[5]++;
       return dispatch({
         type: _actionTypes.ARTICLE_UNFAVORITED,
         payload: _agent.default.Articles.unfavorite(slug)
@@ -55623,32 +55623,32 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-cov_kp221l14h.s[6]++;
+cov_2qlbl0k0an.s[6]++;
 
 const ArticlePreview = props => {
-  cov_kp221l14h.f[3]++;
-  const article = (cov_kp221l14h.s[7]++, props.article);
-  const favoriteButtonClass = (cov_kp221l14h.s[8]++, article.favorited ? (cov_kp221l14h.b[0][0]++, FAVORITED_CLASS) : (cov_kp221l14h.b[0][1]++, NOT_FAVORITED_CLASS));
-  cov_kp221l14h.s[9]++;
+  cov_2qlbl0k0an.f[3]++;
+  const article = (cov_2qlbl0k0an.s[7]++, props.article);
+  const favoriteButtonClass = (cov_2qlbl0k0an.s[8]++, article.favorited ? (cov_2qlbl0k0an.b[0][0]++, FAVORITED_CLASS) : (cov_2qlbl0k0an.b[0][1]++, NOT_FAVORITED_CLASS));
+  cov_2qlbl0k0an.s[9]++;
 
   const handleClick = ev => {
-    cov_kp221l14h.f[4]++;
-    cov_kp221l14h.s[10]++;
+    cov_2qlbl0k0an.f[4]++;
+    cov_2qlbl0k0an.s[10]++;
     ev.preventDefault();
-    cov_kp221l14h.s[11]++;
+    cov_2qlbl0k0an.s[11]++;
 
     if (article.favorited) {
-      cov_kp221l14h.b[1][0]++;
-      cov_kp221l14h.s[12]++;
+      cov_2qlbl0k0an.b[1][0]++;
+      cov_2qlbl0k0an.s[12]++;
       props.unfavorite(article.slug);
     } else {
-      cov_kp221l14h.b[1][1]++;
-      cov_kp221l14h.s[13]++;
+      cov_2qlbl0k0an.b[1][1]++;
+      cov_2qlbl0k0an.s[13]++;
       props.favorite(article.slug);
     }
   };
 
-  cov_kp221l14h.s[14]++;
+  cov_2qlbl0k0an.s[14]++;
   return _react.default.createElement("div", {
     className: "article-preview"
   }, _react.default.createElement("div", {
@@ -55679,8 +55679,8 @@ const ArticlePreview = props => {
   }, _react.default.createElement("h1", null, article.title), _react.default.createElement("p", null, article.description), _react.default.createElement("span", null, "Read more..."), _react.default.createElement("ul", {
     className: "tag-list"
   }, article.tagList.map(tag => {
-    cov_kp221l14h.f[5]++;
-    cov_kp221l14h.s[15]++;
+    cov_2qlbl0k0an.f[5]++;
+    cov_2qlbl0k0an.s[15]++;
     return _react.default.createElement("li", {
       className: "tag-default tag-pill tag-outline",
       key: tag
@@ -55689,8 +55689,8 @@ const ArticlePreview = props => {
 };
 
 var _default = (0, _reactRedux.connect)(() => {
-  cov_kp221l14h.f[6]++;
-  cov_kp221l14h.s[16]++;
+  cov_2qlbl0k0an.f[6]++;
+  cov_2qlbl0k0an.s[16]++;
   return {};
 }, mapDispatchToProps)(ArticlePreview);
 
@@ -55698,13 +55698,13 @@ exports.default = _default;
 },{"react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/ListPagination.js":[function(require,module,exports) {
 "use strict";
 
-var cov_158lbtm2mc = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ListPagination.js";
-  var hash = "c84dbfaabeb07f62a7934e67f8657b4f8de09a83";
+var cov_cojvm0xex = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ListPagination.js";
+  var hash = "05e4c3c5aad1df2fb0223205f69e060f08018252";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ListPagination.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ListPagination.js",
     statementMap: {
       "0": {
         start: {
@@ -56226,7 +56226,7 @@ var cov_158lbtm2mc = function () {
       "2": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "c84dbfaabeb07f62a7934e67f8657b4f8de09a83"
+    hash: "05e4c3c5aad1df2fb0223205f69e060f08018252"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -56252,15 +56252,15 @@ var _actionTypes = require("../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_158lbtm2mc.s[0]++;
+cov_cojvm0xex.s[0]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_158lbtm2mc.f[0]++;
-  cov_158lbtm2mc.s[1]++;
+  cov_cojvm0xex.f[0]++;
+  cov_cojvm0xex.s[1]++;
   return {
     onSetPage: (page, payload) => {
-      cov_158lbtm2mc.f[1]++;
-      cov_158lbtm2mc.s[2]++;
+      cov_cojvm0xex.f[1]++;
+      cov_cojvm0xex.s[2]++;
       return dispatch({
         type: _actionTypes.SET_PAGE,
         page,
@@ -56270,64 +56270,64 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-cov_158lbtm2mc.s[3]++;
+cov_cojvm0xex.s[3]++;
 
 const ListPagination = props => {
-  cov_158lbtm2mc.f[2]++;
-  cov_158lbtm2mc.s[4]++;
+  cov_cojvm0xex.f[2]++;
+  cov_cojvm0xex.s[4]++;
 
   if (props.articlesCount <= 10) {
-    cov_158lbtm2mc.b[0][0]++;
-    cov_158lbtm2mc.s[5]++;
+    cov_cojvm0xex.b[0][0]++;
+    cov_cojvm0xex.s[5]++;
     return null;
   } else {
-    cov_158lbtm2mc.b[0][1]++;
+    cov_cojvm0xex.b[0][1]++;
   }
 
-  const range = (cov_158lbtm2mc.s[6]++, []);
-  cov_158lbtm2mc.s[7]++;
+  const range = (cov_cojvm0xex.s[6]++, []);
+  cov_cojvm0xex.s[7]++;
 
-  for (let i = (cov_158lbtm2mc.s[8]++, 0); i < Math.ceil(props.articlesCount / 10); ++i) {
-    cov_158lbtm2mc.s[9]++;
+  for (let i = (cov_cojvm0xex.s[8]++, 0); i < Math.ceil(props.articlesCount / 10); ++i) {
+    cov_cojvm0xex.s[9]++;
     range.push(i);
   }
 
-  cov_158lbtm2mc.s[10]++;
+  cov_cojvm0xex.s[10]++;
 
   const setPage = page => {
-    cov_158lbtm2mc.f[3]++;
-    cov_158lbtm2mc.s[11]++;
+    cov_cojvm0xex.f[3]++;
+    cov_cojvm0xex.s[11]++;
 
     if (props.pager) {
-      cov_158lbtm2mc.b[1][0]++;
-      cov_158lbtm2mc.s[12]++;
+      cov_cojvm0xex.b[1][0]++;
+      cov_cojvm0xex.s[12]++;
       props.onSetPage(page, props.pager(page));
     } else {
-      cov_158lbtm2mc.b[1][1]++;
-      cov_158lbtm2mc.s[13]++;
+      cov_cojvm0xex.b[1][1]++;
+      cov_cojvm0xex.s[13]++;
       props.onSetPage(page, _agent.default.Articles.all(page));
     }
   };
 
-  cov_158lbtm2mc.s[14]++;
+  cov_cojvm0xex.s[14]++;
   return _react.default.createElement("nav", null, _react.default.createElement("ul", {
     className: "pagination"
   }, range.map(v => {
-    cov_158lbtm2mc.f[4]++;
-    const isCurrent = (cov_158lbtm2mc.s[15]++, v === props.currentPage);
-    cov_158lbtm2mc.s[16]++;
+    cov_cojvm0xex.f[4]++;
+    const isCurrent = (cov_cojvm0xex.s[15]++, v === props.currentPage);
+    cov_cojvm0xex.s[16]++;
 
     const onClick = ev => {
-      cov_158lbtm2mc.f[5]++;
-      cov_158lbtm2mc.s[17]++;
+      cov_cojvm0xex.f[5]++;
+      cov_cojvm0xex.s[17]++;
       ev.preventDefault();
-      cov_158lbtm2mc.s[18]++;
+      cov_cojvm0xex.s[18]++;
       setPage(v);
     };
 
-    cov_158lbtm2mc.s[19]++;
+    cov_cojvm0xex.s[19]++;
     return _react.default.createElement("li", {
-      className: isCurrent ? (cov_158lbtm2mc.b[2][0]++, 'page-item active') : (cov_158lbtm2mc.b[2][1]++, 'page-item'),
+      className: isCurrent ? (cov_cojvm0xex.b[2][0]++, 'page-item active') : (cov_cojvm0xex.b[2][1]++, 'page-item'),
       onClick: onClick,
       key: v.toString()
     }, _react.default.createElement("a", {
@@ -56339,8 +56339,8 @@ const ListPagination = props => {
 };
 
 var _default = (0, _reactRedux.connect)(() => {
-  cov_158lbtm2mc.f[6]++;
-  cov_158lbtm2mc.s[20]++;
+  cov_cojvm0xex.f[6]++;
+  cov_cojvm0xex.s[20]++;
   return {};
 }, mapDispatchToProps)(ListPagination);
 
@@ -56348,13 +56348,13 @@ exports.default = _default;
 },{"react":"../node_modules/react/index.js","../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/ArticleList.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1r5hd8zkb6 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ArticleList.js";
-  var hash = "58bc43f0a9d1047b3208de5b4a1f07f6efefab84";
+var cov_ng7hr47ys = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ArticleList.js";
+  var hash = "88930df39195b70075ff950a65e83afea05e9c09";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ArticleList.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ArticleList.js",
     statementMap: {
       "0": {
         start: {
@@ -56563,7 +56563,7 @@ var cov_1r5hd8zkb6 = function () {
       "1": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "58bc43f0a9d1047b3208de5b4a1f07f6efefab84"
+    hash: "88930df39195b70075ff950a65e83afea05e9c09"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -56587,38 +56587,38 @@ var _react = _interopRequireDefault(require("react"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1r5hd8zkb6.s[0]++;
+cov_ng7hr47ys.s[0]++;
 
 const ArticleList = props => {
-  cov_1r5hd8zkb6.f[0]++;
-  cov_1r5hd8zkb6.s[1]++;
+  cov_ng7hr47ys.f[0]++;
+  cov_ng7hr47ys.s[1]++;
 
   if (!props.articles) {
-    cov_1r5hd8zkb6.b[0][0]++;
-    cov_1r5hd8zkb6.s[2]++;
+    cov_ng7hr47ys.b[0][0]++;
+    cov_ng7hr47ys.s[2]++;
     return _react.default.createElement("div", {
       className: "article-preview-loading"
     }, "Loading...");
   } else {
-    cov_1r5hd8zkb6.b[0][1]++;
+    cov_ng7hr47ys.b[0][1]++;
   }
 
-  cov_1r5hd8zkb6.s[3]++;
+  cov_ng7hr47ys.s[3]++;
 
   if (props.articles.length === 0) {
-    cov_1r5hd8zkb6.b[1][0]++;
-    cov_1r5hd8zkb6.s[4]++;
+    cov_ng7hr47ys.b[1][0]++;
+    cov_ng7hr47ys.s[4]++;
     return _react.default.createElement("div", {
       className: "article-preview"
     }, "No articles are here... yet.");
   } else {
-    cov_1r5hd8zkb6.b[1][1]++;
+    cov_ng7hr47ys.b[1][1]++;
   }
 
-  cov_1r5hd8zkb6.s[5]++;
+  cov_ng7hr47ys.s[5]++;
   return _react.default.createElement("div", null, props.articles.map(article => {
-    cov_1r5hd8zkb6.f[1]++;
-    cov_1r5hd8zkb6.s[6]++;
+    cov_ng7hr47ys.f[1]++;
+    cov_ng7hr47ys.s[6]++;
     return _react.default.createElement(_ArticlePreview.default, {
       article: article,
       key: article.slug
@@ -56636,13 +56636,13 @@ exports.default = _default;
 var global = arguments[3];
 "use strict";
 
-var cov_z58m3y5uk = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Home/MainView.js";
-  var hash = "2a6c6c5d95d4bd51365f396063fed80a71699a6c";
+var cov_clsfjlqv6 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Home/MainView.js";
+  var hash = "4cd87b75689a3f706d10d0d4d8b0bf8164db7c12";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Home/MainView.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Home/MainView.js",
     statementMap: {
       "0": {
         start: {
@@ -57270,7 +57270,7 @@ var cov_z58m3y5uk = function () {
       "3": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "2a6c6c5d95d4bd51365f396063fed80a71699a6c"
+    hash: "4cd87b75689a3f706d10d0d4d8b0bf8164db7c12"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -57298,81 +57298,81 @@ var _actionTypes = require("../../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_z58m3y5uk.s[0]++;
+cov_clsfjlqv6.s[0]++;
 
 const YourFeedTab = props => {
-  cov_z58m3y5uk.f[0]++;
-  cov_z58m3y5uk.s[1]++;
+  cov_clsfjlqv6.f[0]++;
+  cov_clsfjlqv6.s[1]++;
 
   if (props.token) {
-    cov_z58m3y5uk.b[0][0]++;
-    cov_z58m3y5uk.s[2]++;
+    cov_clsfjlqv6.b[0][0]++;
+    cov_clsfjlqv6.s[2]++;
 
     const clickHandler = ev => {
-      cov_z58m3y5uk.f[1]++;
-      cov_z58m3y5uk.s[3]++;
+      cov_clsfjlqv6.f[1]++;
+      cov_clsfjlqv6.s[3]++;
       ev.preventDefault();
-      cov_z58m3y5uk.s[4]++;
+      cov_clsfjlqv6.s[4]++;
       props.onTabClick('feed', _agent.default.Articles.feed, _agent.default.Articles.feed());
     };
 
-    cov_z58m3y5uk.s[5]++;
+    cov_clsfjlqv6.s[5]++;
     return _react.default.createElement("li", {
       className: "nav-item",
       "data-cy": "your-feed"
     }, _react.default.createElement("a", {
       href: "",
-      className: props.tab === 'feed' ? (cov_z58m3y5uk.b[1][0]++, 'nav-link active') : (cov_z58m3y5uk.b[1][1]++, 'nav-link'),
+      className: props.tab === 'feed' ? (cov_clsfjlqv6.b[1][0]++, 'nav-link active') : (cov_clsfjlqv6.b[1][1]++, 'nav-link'),
       onClick: clickHandler
     }, "Your Feed"));
   } else {
-    cov_z58m3y5uk.b[0][1]++;
+    cov_clsfjlqv6.b[0][1]++;
   }
 
-  cov_z58m3y5uk.s[6]++;
+  cov_clsfjlqv6.s[6]++;
   return null;
 };
 
-cov_z58m3y5uk.s[7]++;
+cov_clsfjlqv6.s[7]++;
 
 const GlobalFeedTab = props => {
-  cov_z58m3y5uk.f[2]++;
-  cov_z58m3y5uk.s[8]++;
+  cov_clsfjlqv6.f[2]++;
+  cov_clsfjlqv6.s[8]++;
 
   const clickHandler = ev => {
-    cov_z58m3y5uk.f[3]++;
-    cov_z58m3y5uk.s[9]++;
+    cov_clsfjlqv6.f[3]++;
+    cov_clsfjlqv6.s[9]++;
     ev.preventDefault();
-    cov_z58m3y5uk.s[10]++;
+    cov_clsfjlqv6.s[10]++;
     props.onTabClick('all', _agent.default.Articles.all, _agent.default.Articles.all());
   };
 
-  cov_z58m3y5uk.s[11]++;
+  cov_clsfjlqv6.s[11]++;
   return _react.default.createElement("li", {
     className: "nav-item",
     "data-cy": "global-feed"
   }, _react.default.createElement("a", {
     href: "",
-    className: props.tab === 'all' ? (cov_z58m3y5uk.b[2][0]++, 'nav-link active') : (cov_z58m3y5uk.b[2][1]++, 'nav-link'),
+    className: props.tab === 'all' ? (cov_clsfjlqv6.b[2][0]++, 'nav-link active') : (cov_clsfjlqv6.b[2][1]++, 'nav-link'),
     onClick: clickHandler
   }, "Global Feed"));
 };
 
-cov_z58m3y5uk.s[12]++;
+cov_clsfjlqv6.s[12]++;
 
 const TagFilterTab = props => {
-  cov_z58m3y5uk.f[4]++;
-  cov_z58m3y5uk.s[13]++;
+  cov_clsfjlqv6.f[4]++;
+  cov_clsfjlqv6.s[13]++;
 
   if (!props.tag) {
-    cov_z58m3y5uk.b[3][0]++;
-    cov_z58m3y5uk.s[14]++;
+    cov_clsfjlqv6.b[3][0]++;
+    cov_clsfjlqv6.s[14]++;
     return null;
   } else {
-    cov_z58m3y5uk.b[3][1]++;
+    cov_clsfjlqv6.b[3][1]++;
   }
 
-  cov_z58m3y5uk.s[15]++;
+  cov_clsfjlqv6.s[15]++;
   return _react.default.createElement("li", {
     className: "nav-item",
     "data-cy": "tag-feed"
@@ -57384,26 +57384,26 @@ const TagFilterTab = props => {
   }), " ", props.tag));
 };
 
-cov_z58m3y5uk.s[16]++;
+cov_clsfjlqv6.s[16]++;
 
 const mapStateToProps = state => {
-  cov_z58m3y5uk.f[5]++;
-  cov_z58m3y5uk.s[17]++;
+  cov_clsfjlqv6.f[5]++;
+  cov_clsfjlqv6.s[17]++;
   return { ...state.articleList,
     tags: state.home.tags,
     token: state.common.token
   };
 };
 
-cov_z58m3y5uk.s[18]++;
+cov_clsfjlqv6.s[18]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_z58m3y5uk.f[6]++;
-  cov_z58m3y5uk.s[19]++;
+  cov_clsfjlqv6.f[6]++;
+  cov_clsfjlqv6.s[19]++;
   return {
     onTabClick: (tab, pager, payload) => {
-      cov_z58m3y5uk.f[7]++;
-      cov_z58m3y5uk.s[20]++;
+      cov_clsfjlqv6.f[7]++;
+      cov_clsfjlqv6.s[20]++;
       return dispatch({
         type: _actionTypes.CHANGE_TAB,
         tab,
@@ -57414,11 +57414,11 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-cov_z58m3y5uk.s[21]++;
+cov_clsfjlqv6.s[21]++;
 
 const MainView = props => {
-  cov_z58m3y5uk.f[8]++;
-  cov_z58m3y5uk.s[22]++;
+  cov_clsfjlqv6.f[8]++;
+  cov_clsfjlqv6.s[22]++;
   return _react.default.createElement("div", {
     className: "col-md-9"
   }, _react.default.createElement("div", {
@@ -57449,13 +57449,13 @@ exports.default = _default;
 },{"../ArticleList":"../src/components/ArticleList.js","react":"../node_modules/react/index.js","../../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Home/Tags.js":[function(require,module,exports) {
 "use strict";
 
-var cov_s3x3f9nlr = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Home/Tags.js";
-  var hash = "df4a70aec1a88cbdcee83b19c9596f00a2cd1ede";
+var cov_uukzl6eig = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Home/Tags.js";
+  var hash = "916bb2c9eb447149d1adcbc74c46a33a10a7cad8";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Home/Tags.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Home/Tags.js",
     statementMap: {
       "0": {
         start: {
@@ -57713,7 +57713,7 @@ var cov_s3x3f9nlr = function () {
       "0": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "df4a70aec1a88cbdcee83b19c9596f00a2cd1ede"
+    hash: "916bb2c9eb447149d1adcbc74c46a33a10a7cad8"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -57735,35 +57735,35 @@ var _agent = _interopRequireDefault(require("../../agent"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_s3x3f9nlr.s[0]++;
+cov_uukzl6eig.s[0]++;
 
 const Tags = props => {
-  cov_s3x3f9nlr.f[0]++;
-  const tags = (cov_s3x3f9nlr.s[1]++, props.tags);
-  cov_s3x3f9nlr.s[2]++;
+  cov_uukzl6eig.f[0]++;
+  const tags = (cov_uukzl6eig.s[1]++, props.tags);
+  cov_uukzl6eig.s[2]++;
 
   if (tags) {
-    cov_s3x3f9nlr.b[0][0]++;
-    cov_s3x3f9nlr.s[3]++;
+    cov_uukzl6eig.b[0][0]++;
+    cov_uukzl6eig.s[3]++;
     return _react.default.createElement("div", {
       className: "tag-list"
     }, tags.map(tag => {
-      cov_s3x3f9nlr.f[1]++;
-      cov_s3x3f9nlr.s[4]++;
+      cov_uukzl6eig.f[1]++;
+      cov_uukzl6eig.s[4]++;
 
       const handleClick = ev => {
-        cov_s3x3f9nlr.f[2]++;
-        cov_s3x3f9nlr.s[5]++;
+        cov_uukzl6eig.f[2]++;
+        cov_uukzl6eig.s[5]++;
         ev.preventDefault();
-        cov_s3x3f9nlr.s[6]++;
+        cov_uukzl6eig.s[6]++;
         props.onClickTag(tag, page => {
-          cov_s3x3f9nlr.f[3]++;
-          cov_s3x3f9nlr.s[7]++;
+          cov_uukzl6eig.f[3]++;
+          cov_uukzl6eig.s[7]++;
           return _agent.default.Articles.byTag(tag, page);
         }, _agent.default.Articles.byTag(tag));
       };
 
-      cov_s3x3f9nlr.s[8]++;
+      cov_uukzl6eig.s[8]++;
       return _react.default.createElement("a", {
         "data-cy": "tag",
         href: "",
@@ -57773,8 +57773,8 @@ const Tags = props => {
       }, tag);
     }));
   } else {
-    cov_s3x3f9nlr.b[0][1]++;
-    cov_s3x3f9nlr.s[9]++;
+    cov_uukzl6eig.b[0][1]++;
+    cov_uukzl6eig.s[9]++;
     return _react.default.createElement("div", null, "Loading Tags...");
   }
 };
@@ -57785,13 +57785,13 @@ exports.default = _default;
 var global = arguments[3];
 "use strict";
 
-var cov_1cj7tnw5y8 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Home/index.js";
-  var hash = "da5500b8deea2637ce73db96b941e8fa18cfc42e";
+var cov_apfmghs7q = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Home/index.js";
+  var hash = "1546a1f12677f889943c0c0b739310780ae15443";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Home/index.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Home/index.js",
     statementMap: {
       "0": {
         start: {
@@ -58216,7 +58216,7 @@ var cov_1cj7tnw5y8 = function () {
       "1": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "da5500b8deea2637ce73db96b941e8fa18cfc42e"
+    hash: "1546a1f12677f889943c0c0b739310780ae15443"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -58248,27 +58248,27 @@ var _actionTypes = require("../../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-const Promise = (cov_1cj7tnw5y8.s[0]++, global.Promise);
-cov_1cj7tnw5y8.s[1]++;
+const Promise = (cov_apfmghs7q.s[0]++, global.Promise);
+cov_apfmghs7q.s[1]++;
 
 const mapStateToProps = state => {
-  cov_1cj7tnw5y8.f[0]++;
-  cov_1cj7tnw5y8.s[2]++;
+  cov_apfmghs7q.f[0]++;
+  cov_apfmghs7q.s[2]++;
   return { ...state.home,
     appName: state.common.appName,
     token: state.common.token
   };
 };
 
-cov_1cj7tnw5y8.s[3]++;
+cov_apfmghs7q.s[3]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_1cj7tnw5y8.f[1]++;
-  cov_1cj7tnw5y8.s[4]++;
+  cov_apfmghs7q.f[1]++;
+  cov_apfmghs7q.s[4]++;
   return {
     onClickTag: (tag, pager, payload) => {
-      cov_1cj7tnw5y8.f[2]++;
-      cov_1cj7tnw5y8.s[5]++;
+      cov_apfmghs7q.f[2]++;
+      cov_apfmghs7q.s[5]++;
       return dispatch({
         type: _actionTypes.APPLY_TAG_FILTER,
         tag,
@@ -58277,8 +58277,8 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onLoad: (tab, pager, payload) => {
-      cov_1cj7tnw5y8.f[3]++;
-      cov_1cj7tnw5y8.s[6]++;
+      cov_apfmghs7q.f[3]++;
+      cov_apfmghs7q.s[6]++;
       return dispatch({
         type: _actionTypes.HOME_PAGE_LOADED,
         tab,
@@ -58287,8 +58287,8 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onUnload: () => {
-      cov_1cj7tnw5y8.f[4]++;
-      cov_1cj7tnw5y8.s[7]++;
+      cov_apfmghs7q.f[4]++;
+      cov_apfmghs7q.s[7]++;
       return dispatch({
         type: _actionTypes.HOME_PAGE_UNLOADED
       });
@@ -58298,22 +58298,22 @@ const mapDispatchToProps = dispatch => {
 
 class Home extends (_react.default.Component) {
   componentWillMount() {
-    cov_1cj7tnw5y8.f[5]++;
-    const tab = (cov_1cj7tnw5y8.s[8]++, this.props.token ? (cov_1cj7tnw5y8.b[0][0]++, 'feed') : (cov_1cj7tnw5y8.b[0][1]++, 'all'));
-    const articlesPromise = (cov_1cj7tnw5y8.s[9]++, this.props.token ? (cov_1cj7tnw5y8.b[1][0]++, _agent.default.Articles.feed) : (cov_1cj7tnw5y8.b[1][1]++, _agent.default.Articles.all));
-    cov_1cj7tnw5y8.s[10]++;
+    cov_apfmghs7q.f[5]++;
+    const tab = (cov_apfmghs7q.s[8]++, this.props.token ? (cov_apfmghs7q.b[0][0]++, 'feed') : (cov_apfmghs7q.b[0][1]++, 'all'));
+    const articlesPromise = (cov_apfmghs7q.s[9]++, this.props.token ? (cov_apfmghs7q.b[1][0]++, _agent.default.Articles.feed) : (cov_apfmghs7q.b[1][1]++, _agent.default.Articles.all));
+    cov_apfmghs7q.s[10]++;
     this.props.onLoad(tab, articlesPromise, Promise.all([_agent.default.Tags.getAll(), articlesPromise()]));
   }
 
   componentWillUnmount() {
-    cov_1cj7tnw5y8.f[6]++;
-    cov_1cj7tnw5y8.s[11]++;
+    cov_apfmghs7q.f[6]++;
+    cov_apfmghs7q.s[11]++;
     this.props.onUnload();
   }
 
   render() {
-    cov_1cj7tnw5y8.f[7]++;
-    cov_1cj7tnw5y8.s[12]++;
+    cov_apfmghs7q.f[7]++;
+    cov_apfmghs7q.s[12]++;
     return _react.default.createElement("div", {
       className: "home-page"
     }, _react.default.createElement(_Banner.default, {
@@ -58341,13 +58341,13 @@ exports.default = _default;
 },{"./Banner":"../src/components/Home/Banner.js","./MainView":"../src/components/Home/MainView.js","react":"../node_modules/react/index.js","./Tags":"../src/components/Home/Tags.js","../../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Login.js":[function(require,module,exports) {
 "use strict";
 
-var cov_28cw4qrwms = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Login.js";
-  var hash = "72479d7ba8e412ebc0be96c77ea9948e7795f1f7";
+var cov_1vjjnpmg3l = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Login.js";
+  var hash = "5743aa3503f60c7c7b8900923f6cd459a4cb2908";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Login.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Login.js",
     statementMap: {
       "0": {
         start: {
@@ -58915,7 +58915,7 @@ var cov_28cw4qrwms = function () {
     },
     b: {},
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "72479d7ba8e412ebc0be96c77ea9948e7795f1f7"
+    hash: "5743aa3503f60c7c7b8900923f6cd459a4cb2908"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -58945,24 +58945,24 @@ var _actionTypes = require("../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_28cw4qrwms.s[0]++;
+cov_1vjjnpmg3l.s[0]++;
 
 const mapStateToProps = state => {
-  cov_28cw4qrwms.f[0]++;
-  cov_28cw4qrwms.s[1]++;
+  cov_1vjjnpmg3l.f[0]++;
+  cov_1vjjnpmg3l.s[1]++;
   return { ...state.auth
   };
 };
 
-cov_28cw4qrwms.s[2]++;
+cov_1vjjnpmg3l.s[2]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_28cw4qrwms.f[1]++;
-  cov_28cw4qrwms.s[3]++;
+  cov_1vjjnpmg3l.f[1]++;
+  cov_1vjjnpmg3l.s[3]++;
   return {
     onChangeEmail: value => {
-      cov_28cw4qrwms.f[2]++;
-      cov_28cw4qrwms.s[4]++;
+      cov_1vjjnpmg3l.f[2]++;
+      cov_1vjjnpmg3l.s[4]++;
       return dispatch({
         type: _actionTypes.UPDATE_FIELD_AUTH,
         key: 'email',
@@ -58970,8 +58970,8 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onChangePassword: value => {
-      cov_28cw4qrwms.f[3]++;
-      cov_28cw4qrwms.s[5]++;
+      cov_1vjjnpmg3l.f[3]++;
+      cov_1vjjnpmg3l.s[5]++;
       return dispatch({
         type: _actionTypes.UPDATE_FIELD_AUTH,
         key: 'password',
@@ -58979,16 +58979,16 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onSubmit: (email, password) => {
-      cov_28cw4qrwms.f[4]++;
-      cov_28cw4qrwms.s[6]++;
+      cov_1vjjnpmg3l.f[4]++;
+      cov_1vjjnpmg3l.s[6]++;
       return dispatch({
         type: _actionTypes.LOGIN,
         payload: _agent.default.Auth.login(email, password)
       });
     },
     onUnload: () => {
-      cov_28cw4qrwms.f[5]++;
-      cov_28cw4qrwms.s[7]++;
+      cov_1vjjnpmg3l.f[5]++;
+      cov_1vjjnpmg3l.s[7]++;
       return dispatch({
         type: _actionTypes.LOGIN_PAGE_UNLOADED
       });
@@ -58998,51 +58998,51 @@ const mapDispatchToProps = dispatch => {
 
 class Login extends (_react.default.Component) {
   constructor() {
-    cov_28cw4qrwms.f[6]++;
-    cov_28cw4qrwms.s[8]++;
+    cov_1vjjnpmg3l.f[6]++;
+    cov_1vjjnpmg3l.s[8]++;
     super();
-    cov_28cw4qrwms.s[9]++;
+    cov_1vjjnpmg3l.s[9]++;
 
     this.changeEmail = ev => {
-      cov_28cw4qrwms.f[7]++;
-      cov_28cw4qrwms.s[10]++;
+      cov_1vjjnpmg3l.f[7]++;
+      cov_1vjjnpmg3l.s[10]++;
       return this.props.onChangeEmail(ev.target.value);
     };
 
-    cov_28cw4qrwms.s[11]++;
+    cov_1vjjnpmg3l.s[11]++;
 
     this.changePassword = ev => {
-      cov_28cw4qrwms.f[8]++;
-      cov_28cw4qrwms.s[12]++;
+      cov_1vjjnpmg3l.f[8]++;
+      cov_1vjjnpmg3l.s[12]++;
       return this.props.onChangePassword(ev.target.value);
     };
 
-    cov_28cw4qrwms.s[13]++;
+    cov_1vjjnpmg3l.s[13]++;
 
     this.submitForm = (email, password) => {
-      cov_28cw4qrwms.f[9]++;
-      cov_28cw4qrwms.s[14]++;
+      cov_1vjjnpmg3l.f[9]++;
+      cov_1vjjnpmg3l.s[14]++;
       return ev => {
-        cov_28cw4qrwms.f[10]++;
-        cov_28cw4qrwms.s[15]++;
+        cov_1vjjnpmg3l.f[10]++;
+        cov_1vjjnpmg3l.s[15]++;
         ev.preventDefault();
-        cov_28cw4qrwms.s[16]++;
+        cov_1vjjnpmg3l.s[16]++;
         this.props.onSubmit(email, password);
       };
     };
   }
 
   componentWillUnmount() {
-    cov_28cw4qrwms.f[11]++;
-    cov_28cw4qrwms.s[17]++;
+    cov_1vjjnpmg3l.f[11]++;
+    cov_1vjjnpmg3l.s[17]++;
     this.props.onUnload();
   }
 
   render() {
-    cov_28cw4qrwms.f[12]++;
-    const email = (cov_28cw4qrwms.s[18]++, this.props.email);
-    const password = (cov_28cw4qrwms.s[19]++, this.props.password);
-    cov_28cw4qrwms.s[20]++;
+    cov_1vjjnpmg3l.f[12]++;
+    const email = (cov_1vjjnpmg3l.s[18]++, this.props.email);
+    const password = (cov_1vjjnpmg3l.s[19]++, this.props.password);
+    cov_1vjjnpmg3l.s[20]++;
     return _react.default.createElement("div", {
       className: "auth-page"
     }, _react.default.createElement("div", {
@@ -59092,13 +59092,13 @@ exports.default = _default;
 },{"react-router-dom":"../node_modules/react-router-dom/es/index.js","./ListErrors":"../src/components/ListErrors.js","react":"../node_modules/react/index.js","../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Profile.js":[function(require,module,exports) {
 "use strict";
 
-var cov_a79lphyoa = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Profile.js";
-  var hash = "fe62013d1b2cf92793dd0e02590715ca1e0b9fd7";
+var cov_sk8ircxqx = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Profile.js";
+  var hash = "2d665666aa0262147f50c516b798bca6ea3c3aea";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Profile.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Profile.js",
     statementMap: {
       "0": {
         start: {
@@ -60038,7 +60038,7 @@ var cov_a79lphyoa = function () {
       "6": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "fe62013d1b2cf92793dd0e02590715ca1e0b9fd7"
+    hash: "2d665666aa0262147f50c516b798bca6ea3c3aea"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -60068,15 +60068,15 @@ var _actionTypes = require("../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_a79lphyoa.s[0]++;
+cov_sk8ircxqx.s[0]++;
 
 const EditProfileSettings = props => {
-  cov_a79lphyoa.f[0]++;
-  cov_a79lphyoa.s[1]++;
+  cov_sk8ircxqx.f[0]++;
+  cov_sk8ircxqx.s[1]++;
 
   if (props.isUser) {
-    cov_a79lphyoa.b[0][0]++;
-    cov_a79lphyoa.s[2]++;
+    cov_sk8ircxqx.b[0][0]++;
+    cov_sk8ircxqx.s[2]++;
     return _react.default.createElement(_reactRouterDom.Link, {
       to: "/settings",
       "data-cy": "edit-profile-settings",
@@ -60085,74 +60085,74 @@ const EditProfileSettings = props => {
       className: "ion-gear-a"
     }), " Edit Profile Settings");
   } else {
-    cov_a79lphyoa.b[0][1]++;
+    cov_sk8ircxqx.b[0][1]++;
   }
 
-  cov_a79lphyoa.s[3]++;
+  cov_sk8ircxqx.s[3]++;
   return null;
 };
 
-cov_a79lphyoa.s[4]++;
+cov_sk8ircxqx.s[4]++;
 
 const FollowUserButton = props => {
-  cov_a79lphyoa.f[1]++;
-  cov_a79lphyoa.s[5]++;
+  cov_sk8ircxqx.f[1]++;
+  cov_sk8ircxqx.s[5]++;
 
   if (props.isUser) {
-    cov_a79lphyoa.b[1][0]++;
-    cov_a79lphyoa.s[6]++;
+    cov_sk8ircxqx.b[1][0]++;
+    cov_sk8ircxqx.s[6]++;
     return null;
   } else {
-    cov_a79lphyoa.b[1][1]++;
+    cov_sk8ircxqx.b[1][1]++;
   }
 
-  let classes = (cov_a79lphyoa.s[7]++, 'btn btn-sm action-btn');
-  cov_a79lphyoa.s[8]++;
+  let classes = (cov_sk8ircxqx.s[7]++, 'btn btn-sm action-btn');
+  cov_sk8ircxqx.s[8]++;
 
   if (props.user.following) {
-    cov_a79lphyoa.b[2][0]++;
-    cov_a79lphyoa.s[9]++;
+    cov_sk8ircxqx.b[2][0]++;
+    cov_sk8ircxqx.s[9]++;
     classes += ' btn-secondary';
   } else {
-    cov_a79lphyoa.b[2][1]++;
-    cov_a79lphyoa.s[10]++;
+    cov_sk8ircxqx.b[2][1]++;
+    cov_sk8ircxqx.s[10]++;
     classes += ' btn-outline-secondary';
   }
 
-  cov_a79lphyoa.s[11]++;
+  cov_sk8ircxqx.s[11]++;
 
   const handleClick = ev => {
-    cov_a79lphyoa.f[2]++;
-    cov_a79lphyoa.s[12]++;
+    cov_sk8ircxqx.f[2]++;
+    cov_sk8ircxqx.s[12]++;
     ev.preventDefault();
-    cov_a79lphyoa.s[13]++;
+    cov_sk8ircxqx.s[13]++;
 
     if (props.user.following) {
-      cov_a79lphyoa.b[3][0]++;
-      cov_a79lphyoa.s[14]++;
+      cov_sk8ircxqx.b[3][0]++;
+      cov_sk8ircxqx.s[14]++;
       props.unfollow(props.user.username);
     } else {
-      cov_a79lphyoa.b[3][1]++;
-      cov_a79lphyoa.s[15]++;
+      cov_sk8ircxqx.b[3][1]++;
+      cov_sk8ircxqx.s[15]++;
       props.follow(props.user.username);
     }
   };
 
-  cov_a79lphyoa.s[16]++;
+  cov_sk8ircxqx.s[16]++;
   return _react.default.createElement("button", {
     "data-cy": "follow-unfollow-user",
     className: classes,
     onClick: handleClick
   }, _react.default.createElement("i", {
     className: "ion-plus-round"
-  }), "\xA0", props.user.following ? (cov_a79lphyoa.b[4][0]++, 'Unfollow') : (cov_a79lphyoa.b[4][1]++, 'Follow'), " ", props.user.username);
+  }), "\xA0", props.user.following ? (cov_sk8ircxqx.b[4][0]++, 'Unfollow') : (cov_sk8ircxqx.b[4][1]++, 'Follow'), " ", props.user.username);
 };
 
-cov_a79lphyoa.s[17]++;
+cov_sk8ircxqx.s[17]++;
 
 const mapStateToProps = state => {
-  cov_a79lphyoa.f[3]++;
-  cov_a79lphyoa.s[18]++;
+  cov_sk8ircxqx.f[3]++;
+  cov_sk8ircxqx.s[18]++;
   return { ...state.articleList,
     currentUser: state.common.currentUser,
     profile: state.profile
@@ -60160,39 +60160,39 @@ const mapStateToProps = state => {
 };
 
 exports.mapStateToProps = mapStateToProps;
-cov_a79lphyoa.s[19]++;
+cov_sk8ircxqx.s[19]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_a79lphyoa.f[4]++;
-  cov_a79lphyoa.s[20]++;
+  cov_sk8ircxqx.f[4]++;
+  cov_sk8ircxqx.s[20]++;
   return {
     onFollow: username => {
-      cov_a79lphyoa.f[5]++;
-      cov_a79lphyoa.s[21]++;
+      cov_sk8ircxqx.f[5]++;
+      cov_sk8ircxqx.s[21]++;
       return dispatch({
         type: _actionTypes.FOLLOW_USER,
         payload: _agent.default.Profile.follow(username)
       });
     },
     onLoad: payload => {
-      cov_a79lphyoa.f[6]++;
-      cov_a79lphyoa.s[22]++;
+      cov_sk8ircxqx.f[6]++;
+      cov_sk8ircxqx.s[22]++;
       return dispatch({
         type: _actionTypes.PROFILE_PAGE_LOADED,
         payload
       });
     },
     onUnfollow: username => {
-      cov_a79lphyoa.f[7]++;
-      cov_a79lphyoa.s[23]++;
+      cov_sk8ircxqx.f[7]++;
+      cov_sk8ircxqx.s[23]++;
       return dispatch({
         type: _actionTypes.UNFOLLOW_USER,
         payload: _agent.default.Profile.unfollow(username)
       });
     },
     onUnload: () => {
-      cov_a79lphyoa.f[8]++;
-      cov_a79lphyoa.s[24]++;
+      cov_sk8ircxqx.f[8]++;
+      cov_sk8ircxqx.s[24]++;
       return dispatch({
         type: _actionTypes.PROFILE_PAGE_UNLOADED
       });
@@ -60202,20 +60202,20 @@ const mapDispatchToProps = dispatch => {
 
 class Profile extends (_react.default.Component) {
   componentWillMount() {
-    cov_a79lphyoa.f[9]++;
-    cov_a79lphyoa.s[25]++;
+    cov_sk8ircxqx.f[9]++;
+    cov_sk8ircxqx.s[25]++;
     this.props.onLoad(Promise.all([_agent.default.Profile.get(this.props.match.params.username), _agent.default.Articles.byAuthor(this.props.match.params.username)]));
   }
 
   componentWillUnmount() {
-    cov_a79lphyoa.f[10]++;
-    cov_a79lphyoa.s[26]++;
+    cov_sk8ircxqx.f[10]++;
+    cov_sk8ircxqx.s[26]++;
     this.props.onUnload();
   }
 
   renderTabs() {
-    cov_a79lphyoa.f[11]++;
-    cov_a79lphyoa.s[27]++;
+    cov_sk8ircxqx.f[11]++;
+    cov_sk8ircxqx.s[27]++;
     return _react.default.createElement("ul", {
       className: "nav nav-pills outline-active"
     }, _react.default.createElement("li", {
@@ -60233,20 +60233,20 @@ class Profile extends (_react.default.Component) {
   }
 
   render() {
-    cov_a79lphyoa.f[12]++;
-    const profile = (cov_a79lphyoa.s[28]++, this.props.profile);
-    cov_a79lphyoa.s[29]++;
+    cov_sk8ircxqx.f[12]++;
+    const profile = (cov_sk8ircxqx.s[28]++, this.props.profile);
+    cov_sk8ircxqx.s[29]++;
 
     if (!profile) {
-      cov_a79lphyoa.b[5][0]++;
-      cov_a79lphyoa.s[30]++;
+      cov_sk8ircxqx.b[5][0]++;
+      cov_sk8ircxqx.s[30]++;
       return null;
     } else {
-      cov_a79lphyoa.b[5][1]++;
+      cov_sk8ircxqx.b[5][1]++;
     }
 
-    const isUser = (cov_a79lphyoa.s[31]++, (cov_a79lphyoa.b[6][0]++, this.props.currentUser) && (cov_a79lphyoa.b[6][1]++, this.props.profile.username === this.props.currentUser.username));
-    cov_a79lphyoa.s[32]++;
+    const isUser = (cov_sk8ircxqx.s[31]++, (cov_sk8ircxqx.b[6][0]++, this.props.currentUser) && (cov_sk8ircxqx.b[6][1]++, this.props.profile.username === this.props.currentUser.username));
+    cov_sk8ircxqx.s[32]++;
     return _react.default.createElement("div", {
       className: "profile-page"
     }, _react.default.createElement("div", {
@@ -60299,13 +60299,13 @@ exports.default = _default;
 },{"./ArticleList":"../src/components/ArticleList.js","react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/ProfileFavorites.js":[function(require,module,exports) {
 "use strict";
 
-var cov_20fcm02use = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ProfileFavorites.js";
-  var hash = "6d5d6e61fa45f2a407db6827e14625c5b82f0e24";
+var cov_2opjgupb9v = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ProfileFavorites.js";
+  var hash = "a0a87b254677171cf1feff11f6581ade177bb0da";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/ProfileFavorites.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/ProfileFavorites.js",
     statementMap: {
       "0": {
         start: {
@@ -60580,7 +60580,7 @@ var cov_20fcm02use = function () {
     },
     b: {},
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "6d5d6e61fa45f2a407db6827e14625c5b82f0e24"
+    hash: "a0a87b254677171cf1feff11f6581ade177bb0da"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -60610,15 +60610,15 @@ var _actionTypes = require("../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_20fcm02use.s[0]++;
+cov_2opjgupb9v.s[0]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_20fcm02use.f[0]++;
-  cov_20fcm02use.s[1]++;
+  cov_2opjgupb9v.f[0]++;
+  cov_2opjgupb9v.s[1]++;
   return {
     onLoad: (pager, payload) => {
-      cov_20fcm02use.f[1]++;
-      cov_20fcm02use.s[2]++;
+      cov_2opjgupb9v.f[1]++;
+      cov_2opjgupb9v.s[2]++;
       return dispatch({
         type: _actionTypes.PROFILE_PAGE_LOADED,
         pager,
@@ -60626,8 +60626,8 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onUnload: () => {
-      cov_20fcm02use.f[2]++;
-      cov_20fcm02use.s[3]++;
+      cov_2opjgupb9v.f[2]++;
+      cov_2opjgupb9v.s[3]++;
       return dispatch({
         type: _actionTypes.PROFILE_PAGE_UNLOADED
       });
@@ -60637,24 +60637,24 @@ const mapDispatchToProps = dispatch => {
 
 class ProfileFavorites extends _Profile.Profile {
   componentWillMount() {
-    cov_20fcm02use.f[3]++;
-    cov_20fcm02use.s[4]++;
+    cov_2opjgupb9v.f[3]++;
+    cov_2opjgupb9v.s[4]++;
     this.props.onLoad(page => {
-      cov_20fcm02use.f[4]++;
-      cov_20fcm02use.s[5]++;
+      cov_2opjgupb9v.f[4]++;
+      cov_2opjgupb9v.s[5]++;
       return _agent.default.Articles.favoritedBy(this.props.match.params.username, page);
     }, Promise.all([_agent.default.Profile.get(this.props.match.params.username), _agent.default.Articles.favoritedBy(this.props.match.params.username)]));
   }
 
   componentWillUnmount() {
-    cov_20fcm02use.f[5]++;
-    cov_20fcm02use.s[6]++;
+    cov_2opjgupb9v.f[5]++;
+    cov_2opjgupb9v.s[6]++;
     this.props.onUnload();
   }
 
   renderTabs() {
-    cov_20fcm02use.f[6]++;
-    cov_20fcm02use.s[7]++;
+    cov_2opjgupb9v.f[6]++;
+    cov_2opjgupb9v.s[7]++;
     return _react.default.createElement("ul", {
       className: "nav nav-pills outline-active"
     }, _react.default.createElement("li", {
@@ -60678,13 +60678,13 @@ exports.default = _default;
 },{"./Profile":"../src/components/Profile.js","react":"../node_modules/react/index.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Register.js":[function(require,module,exports) {
 "use strict";
 
-var cov_qgdzvf5qn = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Register.js";
-  var hash = "ccf4288a2afa7319717dd5ff0b525d7c5f18bf21";
+var cov_yfakamyr9 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Register.js";
+  var hash = "a1cd8f27423c48663d2a732f09f31a6197d42936";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Register.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Register.js",
     statementMap: {
       "0": {
         start: {
@@ -61357,7 +61357,7 @@ var cov_qgdzvf5qn = function () {
     },
     b: {},
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "ccf4288a2afa7319717dd5ff0b525d7c5f18bf21"
+    hash: "a1cd8f27423c48663d2a732f09f31a6197d42936"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -61387,24 +61387,24 @@ var _actionTypes = require("../constants/actionTypes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_qgdzvf5qn.s[0]++;
+cov_yfakamyr9.s[0]++;
 
 const mapStateToProps = state => {
-  cov_qgdzvf5qn.f[0]++;
-  cov_qgdzvf5qn.s[1]++;
+  cov_yfakamyr9.f[0]++;
+  cov_yfakamyr9.s[1]++;
   return { ...state.auth
   };
 };
 
-cov_qgdzvf5qn.s[2]++;
+cov_yfakamyr9.s[2]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_qgdzvf5qn.f[1]++;
-  cov_qgdzvf5qn.s[3]++;
+  cov_yfakamyr9.f[1]++;
+  cov_yfakamyr9.s[3]++;
   return {
     onChangeEmail: value => {
-      cov_qgdzvf5qn.f[2]++;
-      cov_qgdzvf5qn.s[4]++;
+      cov_yfakamyr9.f[2]++;
+      cov_yfakamyr9.s[4]++;
       return dispatch({
         type: _actionTypes.UPDATE_FIELD_AUTH,
         key: 'email',
@@ -61412,8 +61412,8 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onChangePassword: value => {
-      cov_qgdzvf5qn.f[3]++;
-      cov_qgdzvf5qn.s[5]++;
+      cov_yfakamyr9.f[3]++;
+      cov_yfakamyr9.s[5]++;
       return dispatch({
         type: _actionTypes.UPDATE_FIELD_AUTH,
         key: 'password',
@@ -61421,8 +61421,8 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onChangeUsername: value => {
-      cov_qgdzvf5qn.f[4]++;
-      cov_qgdzvf5qn.s[6]++;
+      cov_yfakamyr9.f[4]++;
+      cov_yfakamyr9.s[6]++;
       return dispatch({
         type: _actionTypes.UPDATE_FIELD_AUTH,
         key: 'username',
@@ -61430,17 +61430,17 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onSubmit: (username, email, password) => {
-      cov_qgdzvf5qn.f[5]++;
-      const payload = (cov_qgdzvf5qn.s[7]++, _agent.default.Auth.register(username, email, password));
-      cov_qgdzvf5qn.s[8]++;
+      cov_yfakamyr9.f[5]++;
+      const payload = (cov_yfakamyr9.s[7]++, _agent.default.Auth.register(username, email, password));
+      cov_yfakamyr9.s[8]++;
       dispatch({
         type: _actionTypes.REGISTER,
         payload
       });
     },
     onUnload: () => {
-      cov_qgdzvf5qn.f[6]++;
-      cov_qgdzvf5qn.s[9]++;
+      cov_yfakamyr9.f[6]++;
+      cov_yfakamyr9.s[9]++;
       return dispatch({
         type: _actionTypes.REGISTER_PAGE_UNLOADED
       });
@@ -61450,60 +61450,60 @@ const mapDispatchToProps = dispatch => {
 
 class Register extends (_react.default.Component) {
   constructor() {
-    cov_qgdzvf5qn.f[7]++;
-    cov_qgdzvf5qn.s[10]++;
+    cov_yfakamyr9.f[7]++;
+    cov_yfakamyr9.s[10]++;
     super();
-    cov_qgdzvf5qn.s[11]++;
+    cov_yfakamyr9.s[11]++;
 
     this.changeEmail = ev => {
-      cov_qgdzvf5qn.f[8]++;
-      cov_qgdzvf5qn.s[12]++;
+      cov_yfakamyr9.f[8]++;
+      cov_yfakamyr9.s[12]++;
       return this.props.onChangeEmail(ev.target.value);
     };
 
-    cov_qgdzvf5qn.s[13]++;
+    cov_yfakamyr9.s[13]++;
 
     this.changePassword = ev => {
-      cov_qgdzvf5qn.f[9]++;
-      cov_qgdzvf5qn.s[14]++;
+      cov_yfakamyr9.f[9]++;
+      cov_yfakamyr9.s[14]++;
       return this.props.onChangePassword(ev.target.value);
     };
 
-    cov_qgdzvf5qn.s[15]++;
+    cov_yfakamyr9.s[15]++;
 
     this.changeUsername = ev => {
-      cov_qgdzvf5qn.f[10]++;
-      cov_qgdzvf5qn.s[16]++;
+      cov_yfakamyr9.f[10]++;
+      cov_yfakamyr9.s[16]++;
       return this.props.onChangeUsername(ev.target.value);
     };
 
-    cov_qgdzvf5qn.s[17]++;
+    cov_yfakamyr9.s[17]++;
 
     this.submitForm = (username, email, password) => {
-      cov_qgdzvf5qn.f[11]++;
-      cov_qgdzvf5qn.s[18]++;
+      cov_yfakamyr9.f[11]++;
+      cov_yfakamyr9.s[18]++;
       return ev => {
-        cov_qgdzvf5qn.f[12]++;
-        cov_qgdzvf5qn.s[19]++;
+        cov_yfakamyr9.f[12]++;
+        cov_yfakamyr9.s[19]++;
         ev.preventDefault();
-        cov_qgdzvf5qn.s[20]++;
+        cov_yfakamyr9.s[20]++;
         this.props.onSubmit(username, email, password);
       };
     };
   }
 
   componentWillUnmount() {
-    cov_qgdzvf5qn.f[13]++;
-    cov_qgdzvf5qn.s[21]++;
+    cov_yfakamyr9.f[13]++;
+    cov_yfakamyr9.s[21]++;
     this.props.onUnload();
   }
 
   render() {
-    cov_qgdzvf5qn.f[14]++;
-    const email = (cov_qgdzvf5qn.s[22]++, this.props.email);
-    const password = (cov_qgdzvf5qn.s[23]++, this.props.password);
-    const username = (cov_qgdzvf5qn.s[24]++, this.props.username);
-    cov_qgdzvf5qn.s[25]++;
+    cov_yfakamyr9.f[14]++;
+    const email = (cov_yfakamyr9.s[22]++, this.props.email);
+    const password = (cov_yfakamyr9.s[23]++, this.props.password);
+    const username = (cov_yfakamyr9.s[24]++, this.props.username);
+    cov_yfakamyr9.s[25]++;
     return _react.default.createElement("div", {
       className: "auth-page"
     }, _react.default.createElement("div", {
@@ -61564,13 +61564,13 @@ exports.default = _default;
 },{"react-router-dom":"../node_modules/react-router-dom/es/index.js","./ListErrors":"../src/components/ListErrors.js","react":"../node_modules/react/index.js","../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/Settings.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1gsuhomjgr = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Settings.js";
-  var hash = "db76fea4156d5bdf483dbc4a1f5a1f6e0e0bb00e";
+var cov_237kv40046 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Settings.js";
+  var hash = "b0afe7d08792bf7a14bef69b048580fd1fb6fecf";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/Settings.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/Settings.js",
     statementMap: {
       "0": {
         start: {
@@ -62399,7 +62399,7 @@ var cov_1gsuhomjgr = function () {
       "5": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "db76fea4156d5bdf483dbc4a1f5a1f6e0e0bb00e"
+    hash: "b0afe7d08792bf7a14bef69b048580fd1fb6fecf"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -62429,10 +62429,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 class SettingsForm extends (_react.default.Component) {
   constructor() {
-    cov_1gsuhomjgr.f[0]++;
-    cov_1gsuhomjgr.s[0]++;
+    cov_237kv40046.f[0]++;
+    cov_237kv40046.s[0]++;
     super();
-    cov_1gsuhomjgr.s[1]++;
+    cov_237kv40046.s[1]++;
     this.state = {
       image: '',
       username: '',
@@ -62440,83 +62440,83 @@ class SettingsForm extends (_react.default.Component) {
       email: '',
       password: ''
     };
-    cov_1gsuhomjgr.s[2]++;
+    cov_237kv40046.s[2]++;
 
     this.updateState = field => {
-      cov_1gsuhomjgr.f[1]++;
-      cov_1gsuhomjgr.s[3]++;
+      cov_237kv40046.f[1]++;
+      cov_237kv40046.s[3]++;
       return ev => {
-        cov_1gsuhomjgr.f[2]++;
-        const state = (cov_1gsuhomjgr.s[4]++, this.state);
-        const newState = (cov_1gsuhomjgr.s[5]++, Object.assign({}, state, {
+        cov_237kv40046.f[2]++;
+        const state = (cov_237kv40046.s[4]++, this.state);
+        const newState = (cov_237kv40046.s[5]++, Object.assign({}, state, {
           [field]: ev.target.value
         }));
-        cov_1gsuhomjgr.s[6]++;
+        cov_237kv40046.s[6]++;
         this.setState(newState);
       };
     };
 
-    cov_1gsuhomjgr.s[7]++;
+    cov_237kv40046.s[7]++;
 
     this.submitForm = ev => {
-      cov_1gsuhomjgr.f[3]++;
-      cov_1gsuhomjgr.s[8]++;
+      cov_237kv40046.f[3]++;
+      cov_237kv40046.s[8]++;
       ev.preventDefault();
-      const user = (cov_1gsuhomjgr.s[9]++, Object.assign({}, this.state));
-      cov_1gsuhomjgr.s[10]++;
+      const user = (cov_237kv40046.s[9]++, Object.assign({}, this.state));
+      cov_237kv40046.s[10]++;
 
       if (!user.password) {
-        cov_1gsuhomjgr.b[0][0]++;
-        cov_1gsuhomjgr.s[11]++;
+        cov_237kv40046.b[0][0]++;
+        cov_237kv40046.s[11]++;
         delete user.password;
       } else {
-        cov_1gsuhomjgr.b[0][1]++;
+        cov_237kv40046.b[0][1]++;
       }
 
-      cov_1gsuhomjgr.s[12]++;
+      cov_237kv40046.s[12]++;
       this.props.onSubmitForm(user);
     };
   }
 
   componentWillMount() {
-    cov_1gsuhomjgr.f[4]++;
-    cov_1gsuhomjgr.s[13]++;
+    cov_237kv40046.f[4]++;
+    cov_237kv40046.s[13]++;
 
     if (this.props.currentUser) {
-      cov_1gsuhomjgr.b[1][0]++;
-      cov_1gsuhomjgr.s[14]++;
+      cov_237kv40046.b[1][0]++;
+      cov_237kv40046.s[14]++;
       Object.assign(this.state, {
-        image: (cov_1gsuhomjgr.b[2][0]++, this.props.currentUser.image) || (cov_1gsuhomjgr.b[2][1]++, ''),
+        image: (cov_237kv40046.b[2][0]++, this.props.currentUser.image) || (cov_237kv40046.b[2][1]++, ''),
         username: this.props.currentUser.username,
         bio: this.props.currentUser.bio,
         email: this.props.currentUser.email
       });
     } else {
-      cov_1gsuhomjgr.b[1][1]++;
+      cov_237kv40046.b[1][1]++;
     }
   }
 
   componentWillReceiveProps(nextProps) {
-    cov_1gsuhomjgr.f[5]++;
-    cov_1gsuhomjgr.s[15]++;
+    cov_237kv40046.f[5]++;
+    cov_237kv40046.s[15]++;
 
     if (nextProps.currentUser) {
-      cov_1gsuhomjgr.b[3][0]++;
-      cov_1gsuhomjgr.s[16]++;
+      cov_237kv40046.b[3][0]++;
+      cov_237kv40046.s[16]++;
       this.setState(Object.assign({}, this.state, {
-        image: (cov_1gsuhomjgr.b[4][0]++, nextProps.currentUser.image) || (cov_1gsuhomjgr.b[4][1]++, ''),
+        image: (cov_237kv40046.b[4][0]++, nextProps.currentUser.image) || (cov_237kv40046.b[4][1]++, ''),
         username: nextProps.currentUser.username,
         bio: nextProps.currentUser.bio,
         email: nextProps.currentUser.email
       }));
     } else {
-      cov_1gsuhomjgr.b[3][1]++;
+      cov_237kv40046.b[3][1]++;
     }
   }
 
   render() {
-    cov_1gsuhomjgr.f[6]++;
-    cov_1gsuhomjgr.s[17]++;
+    cov_237kv40046.f[6]++;
+    cov_237kv40046.s[17]++;
     return _react.default.createElement("form", {
       onSubmit: this.submitForm
     }, _react.default.createElement("fieldset", null, _react.default.createElement("fieldset", {
@@ -62544,7 +62544,7 @@ class SettingsForm extends (_react.default.Component) {
       rows: "8",
       "data-cy": "bio",
       placeholder: "Short bio about you",
-      value: (cov_1gsuhomjgr.b[5][0]++, this.state.bio) || (cov_1gsuhomjgr.b[5][1]++, ''),
+      value: (cov_237kv40046.b[5][0]++, this.state.bio) || (cov_237kv40046.b[5][1]++, ''),
       onChange: this.updateState('bio')
     })), _react.default.createElement("fieldset", {
       className: "form-group"
@@ -62573,40 +62573,40 @@ class SettingsForm extends (_react.default.Component) {
 
 }
 
-cov_1gsuhomjgr.s[18]++;
+cov_237kv40046.s[18]++;
 
 const mapStateToProps = state => {
-  cov_1gsuhomjgr.f[7]++;
-  cov_1gsuhomjgr.s[19]++;
+  cov_237kv40046.f[7]++;
+  cov_237kv40046.s[19]++;
   return { ...state.settings,
     currentUser: state.common.currentUser
   };
 };
 
-cov_1gsuhomjgr.s[20]++;
+cov_237kv40046.s[20]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_1gsuhomjgr.f[8]++;
-  cov_1gsuhomjgr.s[21]++;
+  cov_237kv40046.f[8]++;
+  cov_237kv40046.s[21]++;
   return {
     onClickLogout: () => {
-      cov_1gsuhomjgr.f[9]++;
-      cov_1gsuhomjgr.s[22]++;
+      cov_237kv40046.f[9]++;
+      cov_237kv40046.s[22]++;
       return dispatch({
         type: _actionTypes.LOGOUT
       });
     },
     onSubmitForm: user => {
-      cov_1gsuhomjgr.f[10]++;
-      cov_1gsuhomjgr.s[23]++;
+      cov_237kv40046.f[10]++;
+      cov_237kv40046.s[23]++;
       return dispatch({
         type: _actionTypes.SETTINGS_SAVED,
         payload: _agent.default.Auth.save(user)
       });
     },
     onUnload: () => {
-      cov_1gsuhomjgr.f[11]++;
-      cov_1gsuhomjgr.s[24]++;
+      cov_237kv40046.f[11]++;
+      cov_237kv40046.s[24]++;
       return dispatch({
         type: _actionTypes.SETTINGS_PAGE_UNLOADED
       });
@@ -62616,8 +62616,8 @@ const mapDispatchToProps = dispatch => {
 
 class Settings extends (_react.default.Component) {
   render() {
-    cov_1gsuhomjgr.f[12]++;
-    cov_1gsuhomjgr.s[25]++;
+    cov_237kv40046.f[12]++;
+    cov_237kv40046.s[25]++;
     return _react.default.createElement("div", {
       className: "settings-page"
     }, _react.default.createElement("div", {
@@ -62648,13 +62648,13 @@ exports.default = _default;
 },{"./ListErrors":"../src/components/ListErrors.js","react":"../node_modules/react/index.js","../agent":"../src/agent.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js"}],"../src/components/App.js":[function(require,module,exports) {
 "use strict";
 
-var cov_wmtm9k58l = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/App.js";
-  var hash = "cb833545c698493b3a1f4269452f4a0fdc3c28e4";
+var cov_10kpi8uptv = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/App.js";
+  var hash = "55637f546141bc4825245fcae79d45ef08e5cf26";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/components/App.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/components/App.js",
     statementMap: {
       "0": {
         start: {
@@ -63155,7 +63155,7 @@ var cov_wmtm9k58l = function () {
       "3": [0, 0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "cb833545c698493b3a1f4269452f4a0fdc3c28e4"
+    hash: "55637f546141bc4825245fcae79d45ef08e5cf26"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -63205,11 +63205,11 @@ var _reactRouterRedux = require("react-router-redux");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_wmtm9k58l.s[0]++;
+cov_10kpi8uptv.s[0]++;
 
 const mapStateToProps = state => {
-  cov_wmtm9k58l.f[0]++;
-  cov_wmtm9k58l.s[1]++;
+  cov_10kpi8uptv.f[0]++;
+  cov_10kpi8uptv.s[1]++;
   return {
     appLoaded: state.common.appLoaded,
     appName: state.common.appName,
@@ -63218,15 +63218,15 @@ const mapStateToProps = state => {
   };
 };
 
-cov_wmtm9k58l.s[2]++;
+cov_10kpi8uptv.s[2]++;
 
 const mapDispatchToProps = dispatch => {
-  cov_wmtm9k58l.f[1]++;
-  cov_wmtm9k58l.s[3]++;
+  cov_10kpi8uptv.f[1]++;
+  cov_10kpi8uptv.s[3]++;
   return {
     onLoad: (payload, token) => {
-      cov_wmtm9k58l.f[2]++;
-      cov_wmtm9k58l.s[4]++;
+      cov_10kpi8uptv.f[2]++;
+      cov_10kpi8uptv.s[4]++;
       return dispatch({
         type: _actionTypes.APP_LOAD,
         payload,
@@ -63235,8 +63235,8 @@ const mapDispatchToProps = dispatch => {
       });
     },
     onRedirect: () => {
-      cov_wmtm9k58l.f[3]++;
-      cov_wmtm9k58l.s[5]++;
+      cov_10kpi8uptv.f[3]++;
+      cov_10kpi8uptv.s[5]++;
       return dispatch({
         type: _actionTypes.REDIRECT
       });
@@ -63246,48 +63246,48 @@ const mapDispatchToProps = dispatch => {
 
 class App extends (_react.default.Component) {
   componentWillReceiveProps(nextProps) {
-    cov_wmtm9k58l.f[4]++;
-    cov_wmtm9k58l.s[6]++;
+    cov_10kpi8uptv.f[4]++;
+    cov_10kpi8uptv.s[6]++;
 
     if (nextProps.redirectTo) {
-      cov_wmtm9k58l.b[0][0]++;
-      cov_wmtm9k58l.s[7]++;
+      cov_10kpi8uptv.b[0][0]++;
+      cov_10kpi8uptv.s[7]++;
 
       // this.context.router.replace(nextProps.redirectTo);
       _store.store.dispatch((0, _reactRouterRedux.push)(nextProps.redirectTo));
 
-      cov_wmtm9k58l.s[8]++;
+      cov_10kpi8uptv.s[8]++;
       this.props.onRedirect();
     } else {
-      cov_wmtm9k58l.b[0][1]++;
+      cov_10kpi8uptv.b[0][1]++;
     }
   }
 
   componentWillMount() {
-    cov_wmtm9k58l.f[5]++;
-    const token = (cov_wmtm9k58l.s[9]++, window.localStorage.getItem('jwt'));
-    cov_wmtm9k58l.s[10]++;
+    cov_10kpi8uptv.f[5]++;
+    const token = (cov_10kpi8uptv.s[9]++, window.localStorage.getItem('jwt'));
+    cov_10kpi8uptv.s[10]++;
 
     if (token) {
-      cov_wmtm9k58l.b[1][0]++;
-      cov_wmtm9k58l.s[11]++;
+      cov_10kpi8uptv.b[1][0]++;
+      cov_10kpi8uptv.s[11]++;
 
       _agent.default.setToken(token);
     } else {
-      cov_wmtm9k58l.b[1][1]++;
+      cov_10kpi8uptv.b[1][1]++;
     }
 
-    cov_wmtm9k58l.s[12]++;
-    this.props.onLoad(token ? (cov_wmtm9k58l.b[2][0]++, _agent.default.Auth.current()) : (cov_wmtm9k58l.b[2][1]++, null), token);
+    cov_10kpi8uptv.s[12]++;
+    this.props.onLoad(token ? (cov_10kpi8uptv.b[2][0]++, _agent.default.Auth.current()) : (cov_10kpi8uptv.b[2][1]++, null), token);
   }
 
   render() {
-    cov_wmtm9k58l.f[6]++;
-    cov_wmtm9k58l.s[13]++;
+    cov_10kpi8uptv.f[6]++;
+    cov_10kpi8uptv.s[13]++;
 
     if (this.props.appLoaded) {
-      cov_wmtm9k58l.b[3][0]++;
-      cov_wmtm9k58l.s[14]++;
+      cov_10kpi8uptv.b[3][0]++;
+      cov_10kpi8uptv.s[14]++;
       return _react.default.createElement("div", null, _react.default.createElement(_Header.default, {
         appName: this.props.appName,
         currentUser: this.props.currentUser
@@ -63321,10 +63321,10 @@ class App extends (_react.default.Component) {
         component: _Profile.default
       })));
     } else {
-      cov_wmtm9k58l.b[3][1]++;
+      cov_10kpi8uptv.b[3][1]++;
     }
 
-    cov_wmtm9k58l.s[15]++;
+    cov_10kpi8uptv.s[15]++;
     return _react.default.createElement("div", null, _react.default.createElement(_Header.default, {
       appName: this.props.appName,
       currentUser: this.props.currentUser
@@ -63342,13 +63342,13 @@ exports.default = _default;
 },{"../agent":"../src/agent.js","./Header":"../src/components/Header.js","react":"../node_modules/react/index.js","react-redux":"../node_modules/react-redux/es/index.js","../constants/actionTypes":"../src/constants/actionTypes.js","react-router-dom":"../node_modules/react-router-dom/es/index.js","../components/Article":"../src/components/Article/index.js","../components/Editor":"../src/components/Editor.js","../components/Home":"../src/components/Home/index.js","../components/Login":"../src/components/Login.js","../components/Profile":"../src/components/Profile.js","../components/ProfileFavorites":"../src/components/ProfileFavorites.js","../components/Register":"../src/components/Register.js","../components/Settings":"../src/components/Settings.js","../store":"../src/store.js","react-router-redux":"../node_modules/react-router-redux/es/index.js"}],"../src/index.js":[function(require,module,exports) {
 "use strict";
 
-var cov_1fsjhvo2v3 = function () {
-  var path = "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/index.js";
-  var hash = "4895e00fccd2feaebd57e8ec96ef70ca012ef94e";
+var cov_1okg4tsxz0 = function () {
+  var path = "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/index.js";
+  var hash = "9f613eab7cd0d331340ffbdf386e72fe5d1ed963";
   var global = new Function("return this")();
   var gcv = "__coverage__";
   var coverageData = {
-    path: "/Users/projects/Cypress End-to-End Testing - Demo/Before/Conduit-Cypress/client/src/index.js",
+    path: "/Users/DouglasRIbeiro/Desktop/Dev/Cypress/PluralsightCypress/client/src/index.js",
     statementMap: {
       "0": {
         start: {
@@ -63429,7 +63429,7 @@ var cov_1fsjhvo2v3 = function () {
       "0": [0]
     },
     _coverageSchema: "43e27e138ebf9cfc5966b082cf9a028302ed4184",
-    hash: "4895e00fccd2feaebd57e8ec96ef70ca012ef94e"
+    hash: "9f613eab7cd0d331340ffbdf386e72fe5d1ed963"
   };
   var coverage = global[gcv] || (global[gcv] = {});
 
@@ -63458,7 +63458,7 @@ var _App = _interopRequireDefault(require("./components/App"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-cov_1fsjhvo2v3.s[0]++;
+cov_1okg4tsxz0.s[0]++;
 
 // we always will hit "IF" branch during Cypress tests
 // so we should ignore "ELSE" branch for code coverage purposes
@@ -63466,14 +63466,14 @@ cov_1fsjhvo2v3.s[0]++;
 
 /* istanbul ignore else */
 if (window.Cypress) {
-  cov_1fsjhvo2v3.b[0][0]++;
-  cov_1fsjhvo2v3.s[1]++;
+  cov_1okg4tsxz0.b[0][0]++;
+  cov_1okg4tsxz0.s[1]++;
   window.store = _store.store;
-  cov_1fsjhvo2v3.s[2]++;
+  cov_1okg4tsxz0.s[2]++;
   window.agent = _agent.default;
 } else {}
 
-cov_1fsjhvo2v3.s[3]++;
+cov_1okg4tsxz0.s[3]++;
 
 _reactDom.default.render(_react.default.createElement(_reactRedux.Provider, {
   store: _store.store
@@ -63511,7 +63511,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61082" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54830" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
